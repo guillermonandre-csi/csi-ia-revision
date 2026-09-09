@@ -25,31 +25,6 @@ que quien lo abra ve ese avance y queda guardado en su navegador. No hay servido
 de por medio y por tanto no hay estado compartido en vivo: si dos personas marcan
 tareas a la vez, cada una tiene su copia hasta que alguien comparta su enlace.
 
-## Publicar en GitHub Pages
-
-### Opción A — desde la web de GitHub, sin terminal
-
-1. En GitHub: **New repository**. Nombre sugerido: `csi-ia-revision`.
-   Elige la visibilidad con cuidado (ver la advertencia abajo).
-2. En el repo nuevo: **Add file → Upload files** y sube `index.html`.
-   **Commit changes**.
-3. **Settings → Pages**. En *Build and deployment*, Source: **Deploy from a branch**;
-   Branch: **main**, carpeta **/ (root)**. **Save**.
-4. Espera uno o dos minutos. El sitio queda en:
-   `https://<tu-usuario>.github.io/csi-ia-revision/`
-
-### Opción B — desde la terminal
-
-```bash
-cd csi-ia-pages
-git init -b main
-git add index.html README.md
-git commit -m "Dossier de revisión de la política de IA — borrador para discusión"
-git remote add origin https://github.com/<tu-usuario>/csi-ia-revision.git
-git push -u origin main
-```
-
-Luego habilita Pages en **Settings → Pages** como en el paso 3 de la opción A.
 
 ### Para actualizar
 
