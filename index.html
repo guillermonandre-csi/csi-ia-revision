@@ -1,0 +1,1074 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="author" content="Prof. Guillermo Núñez">
+<meta name="description" content="Revisión de las disposiciones institucionales sobre uso responsable y ético de la Inteligencia Artificial — Colegio San Ignacio de Loyola 2026-2027. Borrador para discusión.">
+<style>
+  :root{color-scheme:light dark}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0}
+  img{max-width:100%}
+  [hidden]{display:none!important}
+</style>
+<title>Dossier de Revisión IA · Política de IA CSI 2026-27</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#FBFAF6; --paper-2:#F4F2EB; --paper-3:#EBE8DE;
+  --ink:#16140F; --ink-2:#3A362C; --muted:#6E6858;
+  --rule:#DAD5C6; --rule-soft:#E7E3D7;
+  --gold:#FFC82B; --gold-ink:#7A5E00; --gold-wash:#FFF8E4;
+  --red:#D5242B; --red-ink:#9E181E; --red-wash:#FDEEEE;
+  --crit:#9E181E; --alto:#8A5A00; --medio:#4C5A3A; --bajo:#5C6470;
+  --chip:#FFFFFF; --shadow:0 1px 2px rgba(22,20,15,.07);
+  --focus:#7A5E00;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14130F; --paper-2:#1C1A15; --paper-3:#252219;
+    --ink:#F3F0E6; --ink-2:#CFC9BA; --muted:#9A9384;
+    --rule:#3A3629; --rule-soft:#2C291F;
+    --gold:#FFC82B; --gold-ink:#FFD966; --gold-wash:#241F10;
+    --red:#F0656B; --red-ink:#F4868A; --red-wash:#2A1616;
+    --crit:#F4868A; --alto:#F0C35E; --medio:#A9C48C; --bajo:#9FB0C4;
+    --chip:#221F18; --shadow:0 1px 2px rgba(0,0,0,.4);
+    --focus:#FFD966;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14130F; --paper-2:#1C1A15; --paper-3:#252219;
+  --ink:#F3F0E6; --ink-2:#CFC9BA; --muted:#9A9384;
+  --rule:#3A3629; --rule-soft:#2C291F;
+  --gold:#FFC82B; --gold-ink:#FFD966; --gold-wash:#241F10;
+  --red:#F0656B; --red-ink:#F4868A; --red-wash:#2A1616;
+  --crit:#F4868A; --alto:#F0C35E; --medio:#A9C48C; --bajo:#9FB0C4;
+  --chip:#221F18; --shadow:0 1px 2px rgba(0,0,0,.4);
+  --focus:#FFD966;
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper); color:var(--ink);
+  font-family:'Cabin',Calibri,'Helvetica Neue',Arial,sans-serif;
+  font-size:16px; line-height:1.6; margin:0;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px 96px}
+
+/* ---------- masthead ---------- */
+.masthead{border-bottom:2px solid var(--ink);padding:40px 0 22px;margin-bottom:0}
+.crest{display:flex;align-items:center;gap:14px;margin-bottom:26px}
+.crest .bar{width:34px;height:5px;background:var(--gold);flex:none}
+.crest .org{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.amdg{margin-left:auto;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:10.5px;letter-spacing:.1em;color:var(--muted);text-transform:uppercase}
+h1{
+  font-size:clamp(1.9rem,4.2vw,3.05rem); line-height:1.08; font-weight:700;
+  letter-spacing:-.022em; margin:0 0 16px; max-width:22ch; text-wrap:balance;
+}
+h1 em{font-style:normal;display:block;color:var(--gold-ink)}
+.standfirst{font-size:1.08rem;color:var(--ink-2);max-width:70ch;margin:0 0 30px}
+.docmeta{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:2px 28px;border-top:1px solid var(--rule-soft);padding-top:18px}
+.docmeta div{padding:6px 0}
+.docmeta dt{font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:3px}
+.docmeta dd{margin:0;font-size:14px;color:var(--ink)}
+
+/* ---------- sections ---------- */
+section{padding:52px 0 0}
+.sechead{display:flex;align-items:flex-end;gap:16px;margin-bottom:6px}
+.secnum{font-family:'IBM Plex Mono',monospace;font-size:14px;color:var(--gold-ink);font-weight:600;letter-spacing:.1em;flex:none;min-width:2.1rem;padding-bottom:2px;border-bottom:2px solid var(--gold);align-self:flex-end;margin-bottom:2px}
+h2{font-size:clamp(1.35rem,2.4vw,1.72rem);line-height:1.2;font-weight:700;letter-spacing:-.014em;margin:0;text-wrap:balance}
+.secintro{color:var(--ink-2);max-width:74ch;margin:11px 0 26px;font-size:15.5px}
+
+/* ---------- fortalezas ---------- */
+.strengths{border-top:1px solid var(--ink);}
+.strength{display:grid;grid-template-columns:minmax(0,15rem) minmax(0,1fr);gap:6px 32px;padding:18px 0;border-bottom:1px solid var(--rule-soft)}
+.strength h3{margin:0;font-size:1rem;font-weight:700;line-height:1.35}
+.strength p{margin:0;color:var(--ink-2);font-size:15px}
+@media (max-width:640px){.strength{grid-template-columns:1fr;gap:4px}}
+
+/* ---------- urgentes ---------- */
+.urgent{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:0;border:1px solid var(--rule)}
+.ucell{padding:22px 22px 24px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);background:var(--paper-2);display:flex;flex-direction:column;gap:9px}
+.ucell:last-child{border-right:none}
+.ucell .ref{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;color:var(--crit);letter-spacing:.05em}
+.ucell h3{margin:0;font-size:1.02rem;font-weight:700;line-height:1.3}
+.ucell p{margin:0;font-size:14.5px;color:var(--ink-2)}
+.ucell .why{margin-top:auto;padding-top:12px;border-top:1px dashed var(--rule);font-size:13px;color:var(--muted)}
+@media (max-width:860px){.ucell{border-right:none}}
+
+/* ---------- controls ---------- */
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:16px 0 22px;border-bottom:1px solid var(--rule);margin-bottom:4px;position:sticky;top:0;background:var(--paper);z-index:20}
+.seg{display:flex;flex-wrap:wrap;gap:6px}
+button.f{
+  font:inherit;font-size:12.5px;font-weight:600;letter-spacing:.02em;
+  padding:6px 12px;border:1px solid var(--rule);background:var(--chip);color:var(--ink-2);
+  border-radius:2px;cursor:pointer;transition:background .12s,border-color .12s,color .12s;
+}
+button.f:hover{border-color:var(--muted)}
+button.f[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+button.f.crit[aria-pressed="true"]{background:var(--crit);border-color:var(--crit);color:#fff}
+.search{flex:1 1 190px;min-width:150px;margin-left:auto}
+.search input{
+  font:inherit;font-size:14px;width:100%;padding:7px 11px;border:1px solid var(--rule);
+  background:var(--chip);color:var(--ink);border-radius:2px;
+}
+.search input::placeholder{color:var(--muted)}
+.count{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--muted);flex:none}
+
+/* ---------- findings ---------- */
+.findings{border-top:1px solid var(--rule)}
+.finding{display:grid;grid-template-columns:5px minmax(0,1fr);border-bottom:1px solid var(--rule-soft)}
+.finding .stripe{background:var(--rule)}
+.finding[data-p="critico"] .stripe{background:var(--red)}
+.finding[data-p="alto"] .stripe{background:var(--gold)}
+.finding[data-p="medio"] .stripe{background:var(--medio)}
+.finding[data-p="bajo"] .stripe{background:var(--rule)}
+.fbody{padding:20px 0 22px 20px;min-width:0}
+.fhead{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:baseline}
+.fcode{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;color:var(--muted);flex:none}
+.finding h3{margin:0;font-size:1.075rem;font-weight:700;line-height:1.32;flex:1 1 18rem;min-width:0}
+.badge{font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;padding:3px 7px;border:1px solid;border-radius:2px;flex:none;white-space:nowrap}
+.badge.critico{color:var(--crit);border-color:var(--crit);background:var(--red-wash)}
+.badge.alto{color:var(--alto);border-color:var(--alto);background:var(--gold-wash)}
+.badge.medio{color:var(--medio);border-color:var(--medio);background:transparent}
+.badge.bajo{color:var(--bajo);border-color:var(--bajo);background:transparent}
+.cites{display:flex;flex-wrap:wrap;gap:6px;margin:11px 0 0}
+.cite{font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:var(--muted);background:var(--paper-3);padding:2px 7px;border-radius:2px}
+.finding p.hz{margin:11px 0 0;color:var(--ink-2);font-size:15px;max-width:74ch}
+blockquote.vigente{
+  margin:13px 0 0;padding:2px 0 2px 15px;border-left:2px solid var(--rule);
+  font-style:italic;color:var(--muted);font-size:14.5px;max-width:74ch;
+}
+details.prop{margin-top:14px}
+details.prop>summary{
+  cursor:pointer;list-style:none;display:inline-flex;align-items:center;gap:7px;
+  font-size:12.5px;font-weight:600;letter-spacing:.03em;text-transform:uppercase;
+  color:var(--gold-ink);padding:3px 0;
+}
+details.prop>summary::-webkit-details-marker{display:none}
+details.prop>summary::before{content:"+";font-family:'IBM Plex Mono',monospace;font-weight:600;display:inline-block;width:12px}
+details.prop[open]>summary::before{content:"–"}
+.propbox{
+  margin-top:10px;border-left:3px solid var(--gold);background:var(--gold-wash);
+  padding:14px 16px;font-size:14.5px;color:var(--ink);max-width:76ch;
+}
+.propbox p{margin:0 0 9px}
+.propbox p:last-child{margin-bottom:0}
+.propbox .where{margin-top:11px;padding-top:10px;border-top:1px solid var(--rule);font-size:12.5px;color:var(--muted)}
+.propbox ul{margin:0 0 9px;padding-left:19px}
+.propbox li{margin-bottom:4px}
+.empty{padding:40px 4px;color:var(--muted);font-size:15px}
+
+/* ---------- escala ---------- */
+.scale{border:1px solid var(--rule);overflow-x:auto}
+.scale table{border-collapse:collapse;width:100%;min-width:620px;font-size:14.5px}
+.scale th,.scale td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--rule-soft);vertical-align:top}
+.scale thead th{font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);font-weight:600;background:var(--paper-2);border-bottom:1px solid var(--rule)}
+.scale tbody tr:last-child td{border-bottom:none}
+.scale td.k{font-family:'IBM Plex Mono',monospace;font-weight:600;color:var(--gold-ink);white-space:nowrap}
+.scale td.lbl{font-weight:600;white-space:nowrap}
+
+
+/* ---------- plan ---------- */
+.planbar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:18px}
+.progress{flex:1 1 240px;min-width:180px}
+.ptrack{height:6px;background:var(--paper-3);border-radius:3px;overflow:hidden}
+.pfill{height:100%;background:var(--gold);width:0%;transition:width .3s ease}
+.plegend{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--muted);margin-top:6px}
+.savenote{font-size:12.5px;color:var(--muted);flex:none;display:flex;align-items:center;gap:6px}
+.planactions{display:flex;gap:8px;flex:none}
+button.f.ghost{color:var(--muted)}
+.planhelp{font-size:13px;color:var(--muted);margin:14px 0 0;max-width:74ch}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--muted);flex:none}
+.dot.live{background:var(--medio)}
+.dot.ro{background:var(--alto)}
+.phase{margin-top:26px}
+.phase h3{
+  font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+  font-weight:600;margin:0 0 0;padding-bottom:8px;border-bottom:1px solid var(--ink);
+}
+.task{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 16px;align-items:start;padding:13px 0;border-bottom:1px solid var(--rule-soft)}
+.task .tmain{min-width:0}
+.task .tt{font-size:15px;font-weight:600;line-height:1.4;margin:0}
+.task .tt.done{text-decoration:line-through;text-decoration-color:var(--muted);color:var(--muted)}
+.task .tmeta{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--muted);margin-top:4px;display:flex;flex-wrap:wrap;gap:4px 12px}
+.states{display:flex;gap:5px;flex:none}
+button.st{
+  font:inherit;font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+  padding:4px 9px;border:1px solid var(--rule);background:var(--chip);color:var(--muted);
+  border-radius:2px;cursor:pointer;white-space:nowrap;
+}
+button.st:hover:not(:disabled){border-color:var(--muted);color:var(--ink-2)}
+button.st[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+button.st[aria-pressed="true"][data-s="curso"]{background:var(--gold);border-color:var(--gold-ink);color:#16140F}
+button.st[aria-pressed="true"][data-s="hecho"]{background:var(--medio);border-color:var(--medio);color:#fff}
+button.st:disabled{opacity:.45;cursor:not-allowed}
+@media (max-width:620px){.task{grid-template-columns:1fr}.states{margin-top:6px}}
+
+/* ---------- closing ---------- */
+.closing{border-left:3px solid var(--gold);background:var(--paper-2);padding:26px 26px;margin-top:14px}
+.closing p{margin:0 0 14px;font-size:1.02rem;color:var(--ink-2);max-width:70ch}
+.closing p:last-child{margin-bottom:0}
+.closing strong{color:var(--ink)}
+.pull{font-size:1.16rem;line-height:1.45;color:var(--ink);font-weight:600;max-width:38ch;border:none;padding:0;margin:0 0 16px}
+
+footer{margin-top:56px;padding-top:22px;border-top:2px solid var(--ink);font-size:13px;color:var(--muted)}
+footer p{margin:0 0 10px;max-width:76ch}
+footer a{color:var(--gold-ink);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px}
+footer .srcs{display:flex;flex-wrap:wrap;gap:4px 14px;margin-top:6px}
+footer .flag{margin-top:14px;padding:12px 14px;border:1px dashed var(--rule);color:var(--ink-2);font-size:12.5px}
+
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<header class="masthead">
+  <div class="crest">
+    <span class="bar"></span>
+    <span class="org">Colegio San Ignacio de Loyola · San Juan</span>
+    <span class="amdg">Ad maiorem Dei gloriam</span>
+  </div>
+  <h1>Revisión de las disposiciones sobre <em>Inteligencia Artificial</em></h1>
+  <p class="standfirst">Veintinueve hallazgos sobre el compendio de la fase de implementación, con el lenguaje normativo propuesto para cada uno. La política es sólida y está adoptada: lo que sigue completa lo que el texto vigente ya promete.</p>
+  <dl class="docmeta">
+    <div><dt>Documento revisado</dt><dd>Compendio de disposiciones sobre IA, 14 ago. 2026</dd></div>
+    <div><dt>Fuentes normativas</dt><dd>Manual del Educador Ignaciano · Facultad · Estudiante</dd></div>
+    <div><dt>Preparado por</dt><dd>Prof. Guillermo Núñez</dd></div>
+    <div><dt>Fecha</dt><dd>9 de septiembre de 2026</dd></div>
+    <div><dt>Estatus</dt><dd>Borrador para discusión</dd></div>
+  </dl>
+</header>
+
+<section id="fortalezas">
+  <div class="sechead"><span class="secnum">I</span><h2>Lo que la política ya logra</h2></div>
+  <p class="secintro">Cinco decisiones de diseño que ninguna recomendación de esta revisión debe debilitar.</p>
+  <div class="strengths">
+    <div class="strength">
+      <h3>Es normativa, no aspiracional</h3>
+      <p>No es una circular: es texto incorporado a los tres manuales que empleados y familias reciben y firman, más los silabarios de cada curso.</p>
+    </div>
+    <div class="strength">
+      <h3>Su fundamento sobrevive al cambio tecnológico</h3>
+      <p>Anclarla en la dignidad humana y el desarrollo integral le da un «por qué» estable. Las políticas ancladas en herramientas caducan cada semestre.</p>
+    </div>
+    <div class="strength">
+      <h3>Autoriza por trabajo, no por decreto</h3>
+      <p>Sitúa la decisión en el profesor, la asignación y la evaluación: donde vive el objetivo de aprendizaje. Evita el falso binario de permitir o prohibir en abstracto.</p>
+    </div>
+    <div class="strength">
+      <h3>Es habilitadora además de restrictiva</h3>
+      <p>Nombrar usos legítimos evita el modo de fallo típico de las políticas de prohibición: que se incumplan en silencio y el estudiante no forme criterio.</p>
+    </div>
+    <div class="strength">
+      <h3>Documenta a los proveedores y se impone sobre ellos</h3>
+      <p>La Tabla 1 de requisitos de edad es diligencia poco común, y reservar al Colegio la facultad de ser más estricto que el proveedor es la regla correcta.</p>
+    </div>
+  </div>
+</section>
+
+<section id="urgentes">
+  <div class="sechead"><span class="secnum">II</span><h2>Cuatro hallazgos urgentes</h2></div>
+  <p class="secintro">Los cuatro que una lectura externa encontraría primero — y los que el <span style="font-family:'IBM Plex Mono',monospace;font-size:.92em">P. de la C. 968</span> volvería consecuentes si la medida avanza y exige registrar la política ante el Departamento de Estado.</p>
+  <div class="urgent">
+    <div class="ucell">
+      <span class="ref">5.1 · CONSENTIMIENTO</span>
+      <h3>Se exige consentimiento parental y no hay instrumento para obtenerlo</h3>
+      <p>La Tabla 1 lo requiere para ChatGPT, Perplexity y Grok en 13-17 años. El único consentimiento del Manual del Estudiante está redactado para «los servicios de Microsoft».</p>
+      <p class="why">Un trabajo asignado hoy cumpliría la política en el papel sin poder cumplirla en los hechos.</p>
+    </div>
+    <div class="ucell">
+      <span class="ref">2.3 · CLASIFICACIÓN</span>
+      <h3>La columna de niveles del Repositorio admite dos lecturas</h3>
+      <p>Los manuales manejan dos taxonomías —división escolar (intermedia y superior, 7mo a 12mo) y nivel de rigor del curso (regular, avanzado, honor, AP)— y la columna toma términos de ambas sin cerrar en ninguna.</p>
+      <p class="why">Con cualquiera de las dos lecturas, «Intermedia» comprende 7mo, donde hay estudiantes de doce años.</p>
+    </div>
+    <div class="ucell">
+      <span class="ref">6.1 · GOBERNANZA</span>
+      <h3>La estructura que decide no existe en la norma</h3>
+      <p>AI Task Force, AIM Team, los cuatro roles designados y las rutas de referido aparecen solo en la orientación de agosto. Cero menciones en el compendio y en los tres manuales.</p>
+      <p class="why">Sin mandato escrito, y el estudiante que lee su manual no sabe que existe.</p>
+    </div>
+    <div class="ucell">
+      <span class="ref">2.1 · REGISTRO</span>
+      <h3>«Herramienta aprobada» no está definida ni publicada</h3>
+      <p>El término tiene efecto normativo en dos numerales. No se dice qué significa, quién aprueba, ni dónde se consulta el resultado.</p>
+      <p class="why">Dos disposiciones dependen de un concepto que no existe.</p>
+    </div>
+  </div>
+</section>
+
+<section id="hallazgos">
+  <div class="sechead"><span class="secnum">III</span><h2>Los veintinueve hallazgos</h2></div>
+  <p class="secintro">Cada hallazgo indica el texto vigente, qué falta y un borrador de lenguaje posible. El borrador no se propone para adoptarse tal cual: se redactó así porque es más fácil discutir sobre texto concreto que sobre generalidades. El código de cada hallazgo remite a la sección del informe donde se desarrolla.</p>
+
+  <div class="controls" role="group" aria-label="Filtros de hallazgos">
+    <div class="seg" id="fprio">
+      <button class="f" data-k="all" aria-pressed="true">Todos</button>
+      <button class="f crit" data-k="critico" aria-pressed="false">Crítico</button>
+      <button class="f" data-k="alto" aria-pressed="false">Alto</button>
+      <button class="f" data-k="medio" aria-pressed="false">Medio</button>
+      <button class="f" data-k="bajo" aria-pressed="false">Bajo</button>
+    </div>
+    <div class="search"><input type="search" id="q" placeholder="Buscar en los hallazgos…" aria-label="Buscar en los hallazgos"></div>
+    <span class="count" id="count">29 de 29</span>
+  </div>
+
+  <div class="findings" id="flist">
+
+  <article class="finding" data-p="critico" data-a="consentimiento">
+    <div class="stripe"></div><div class="fbody">
+    <div class="fhead"><span class="fcode">5.1</span><h3>La política exige consentimiento parental y no provee instrumento</h3><span class="badge critico">Crítico</span></div>
+    <div class="cites"><span class="cite">Compendio pág. 18 · Tabla 1</span><span class="cite">Manual del Estudiante · Uso de Tecnología</span></div>
+    <blockquote class="vigente">«Con la firma de recibo del Manual del Estudiante, los padres de cada estudiante dan consentimiento al uso de los servicios de Microsoft.»</blockquote>
+    <p class="hz">La Tabla 1 establece que el consentimiento parental es requerido por el proveedor para ChatGPT, Perplexity y Grok en 13-17 años, y Family Link para Gemini bajo 13. Nada cubre herramientas de terceros. Lo que sí dispone la pág. 16 —que los padres «se comprometen con asegurar que sus hijos cumplan»— es un deber de colaboración, no un consentimiento informado: no identifica herramienta, datos, propósito ni ofrece opción de negarse.</p>
+    <p class="hz">La población afectada es concreta, no hipotética: el Colegio atiende de 7mo a 12mo, de modo que en 7mo hay estudiantes de doce años al comenzar el año escolar —para quienes la Tabla 1 no admite acceso a ChatGPT, Claude, Perplexity ni Grok— y el resto del estudiantado, hasta parte de 12mo, cae en el tramo de 13 a 17 años que sí requiere consentimiento parental.</p>
+    <details class="prop"><summary>Lenguaje propuesto</summary><div class="propbox">
+      <p>Cuando el uso de una herramienta de inteligencia artificial requiera consentimiento del padre, madre o tutor legal, el Colegio lo obtendrá y conservará por escrito antes de que la herramienta se utilice con estudiantes. El consentimiento identificará la herramienta y su proveedor, el propósito educativo, la información que se ingresará y la que no, el límite de edad aplicable y el enlace a los términos de uso.</p>
+      <p>El padre, madre o tutor legal podrá no consentir, y retirar un consentimiento otorgado, mediante comunicación escrita. En ambos casos el estudiante recibirá una alternativa educativa sin desventaja alguna en su evaluación. El consentimiento se renovará anualmente con la matrícula.</p>
+      <p>Cuando el Colegio provea acceso mediante cuenta institucional, con los controles de edad, privacidad y retención que establezca, el consentimiento se manejará de forma institucional y no individual. <strong>Esta es la modalidad preferente.</strong></p>
+      <p class="where">Manual del Estudiante, a continuación de la Tabla 1 · Dirección Académica con asesoría legal</p>
+    </div></details>
+    </div>
+  </article>
+
+  <article class="finding" data-p="critico" data-a="registro">
+    <div class="stripe"></div><div class="fbody">
+    <div class="fhead"><span class="fcode">2.3</span><h3>La columna de niveles del Repositorio admite dos lecturas</h3><span class="badge critico">Crítico</span></div>
+    <div class="cites"><span class="cite">Repositorio_IA_CSI · columna «Niveles»</span><span class="cite">Manual del Estudiante · Anejo #1</span><span class="cite">Compendio pág. 18 · Tabla 1</span></div>
+    <p class="hz">El Repositorio clasifica cada herramienta con una columna «Niveles», cuyos valores son «Básica | Intermedia | Superior | AP» en distintas combinaciones. Los manuales manejan <strong>dos taxonomías distintas</strong>, y la columna toma términos de ambas: la <strong>división escolar</strong> —«una institución católica de educación intermedia y superior para varones», con la oferta co-curricular listada como «7mo – 12mo»— y el <strong>nivel de rigor del curso</strong> —regular · avanzado · honor · AP, según el Anejo #1, «Descripción Criterios de Ubicación: Nivel Avanzado, Honor y AP».</p>
+    <p class="hz">«Intermedia» y «Superior» pertenecen al primer eje; «AP» al segundo. «Básica» no aparece en ninguno de los dos: el manual llama «regular» al nivel de entrada de rigor. Y «avanzado» y «honor» no aparecen en ninguna de las diecinueve fichas del Repositorio. De ahí que la columna admita dos lecturas y quede incompleta en ambas: leída como división escolar, «AP» y «Básica» no corresponden a ese eje; leída como nivel de rigor —que es lo que sugieren «Básica» y «AP» juntos, y probablemente la intención— «Intermedia» y «Superior» no corresponden, «Básica» haría el papel de «regular», y faltarían «avanzado» y «honor».</p>
+    <p class="hz"><strong>Consecuencia práctica.</strong> Un profesor que consulte el Repositorio para saber si puede usar una herramienta con su grupo no tiene una lectura única. Y como la columna no distingue entre el uso que hace el maestro y el uso que hace el estudiante, la fila se lee como autorización de uso estudiantil.</p>
+    <p class="hz"><strong>Lo que sí depende de la edad.</strong> Con independencia de cómo se lea la columna, «Intermedia» comprende 7mo, donde hay estudiantes de doce años al comenzar el año escolar; la Tabla 1 no admite acceso a menores de 13 en ChatGPT, Claude, Perplexity ni Grok, y requiere Family Link para Gemini. La ficha de Claude presenta además una tensión interna: la clasifica para «Intermedia | Superior | AP» y su propio texto dice «NO permitido para menores de 18 años» — y como la Escuela Superior abarca cuatro años, el tramo bajo 18 comprende prácticamente todo el estudiantado salvo parte de 12mo.</p>
+    <details class="prop"><summary>Consideraciones</summary><div class="propbox">
+      <p>La ambigüedad se resuelve decidiendo primero qué pregunta debe contestar esa columna:</p>
+      <ul>
+        <li>Si busca indicar <strong>nivel de rigor del curso</strong>, la nomenclatura del Anejo #1 —regular, avanzado, honor, AP— sería la referencia natural, y quedaría por definir si la selección de una herramienta depende realmente del rigor del curso.</li>
+        <li>Si busca indicar <strong>división escolar</strong>, quedaría por resolver dónde ubicar «AP» y qué se entiende por «Básica».</li>
+        <li>Cabe una tercera posibilidad: que ninguno de los dos ejes sea el pertinente. Si lo que el profesor necesita saber es qué edad y qué consentimiento aplican, el campo útil sería el <strong>grado o la edad</strong> — información que la Tabla 1 ya contiene.</li>
+      </ul>
+      <p>Con independencia de cuál se adopte, dos ajustes parecen quedar en pie por sí solos: distinguir «uso docente» de «uso estudiantil», y consignar fecha, versión y autor de récord, dado que el contenido del Repositorio —precios, disponibilidad, reglas de edad— es de los más perecederos del conjunto.</p>
+      <p>Una nota de subordinación ubicaría el documento respecto de la norma. A modo de ejemplo: «Este documento es un recurso pedagógico de apoyo. La autorización de uso de cualquier herramienta se rige por el Registro Institucional de Herramientas de IA y por la Tabla de requisitos de edad y acceso por proveedor. En caso de discrepancia, prevalece el Registro.»</p>
+      <p>La adopción del hallazgo 2.4 atenúa además el problema de fondo: la discrepancia entre el Repositorio y la Tabla 1 pesa porque hoy ambos documentos se leen como normativos. Con una sola fuente normativa, pasa a ser una desactualización del anexo.</p>
+      <p class="where">Repositorio de Herramientas de IA · Instructional AI Lead</p>
+    </div></details>
+    </div>
+  </article>
+
+  <article class="finding" data-p="critico" data-a="gobernanza">
+    <div class="stripe"></div><div class="fbody">
+    <div class="fhead"><span class="fcode">6.1</span><h3>La estructura de gobernanza no tiene anclaje normativo</h3><span class="badge critico">Crítico</span></div>
+    <div class="cites"><span class="cite">Orientación al personal · ago. 2026</span><span class="cite">Compendio pág. 19 · Procedimiento</span></div>
+    <p class="hz">La orientación establece AI Task Force (consulta), AIM Team (intervención, <span style="font-family:'IBM Plex Mono',monospace;font-size:.92em">aimteam@sanignacio.pr</span>), cuatro roles con nombre y rutas de referido diferenciadas. Ninguno aparece en el compendio ni en los tres manuales. Tres consecuencias: no hay mandato ni facultades escritas; el estudiante y la familia no saben que la estructura existe; y hay dos rutas de referido —Decanato y AIM Team— sin regla de deslinde para el caso que corresponde a ambas.</p>
+    <details class="prop"><summary>Lenguaje propuesto</summary><div class="propbox">
+      <p>Incorporar al Manual de Facultad y al Manual del Educador Ignaciano, con versión resumida en el Manual del Estudiante:</p>
+      <ul>
+        <li><strong>AI Owner</strong> — custodia la política, convoca su revisión, autoriza la publicación del Registro y responde ante Dirección Académica.</li>
+        <li><strong>AI Task Force</strong> — consulta al personal, evalúa herramientas conforme a la Rúbrica, recomienda clasificaciones y propone enmiendas. Recomendaciones documentadas por escrito.</li>
+        <li><strong>AIM Team</strong> — intervención en uso no responsable que no sea primariamente falta de integridad: divulgación de información confidencial, sesgo, contenido que lesione la dignidad, incidentes de privacidad.</li>
+        <li><strong>Decanato</strong> — faltas de integridad académica y uso no autorizado, con Informe de Incidentes en PlusPortals.</li>
+      </ul>
+      <p>Añadir una matriz de escalamiento por tipo de situación. Cuando una situación corresponda a más de una vía, se atiende primero la que atienda el riesgo a la persona y las demás se tramitan en paralelo; Dirección Académica resuelve dudas de competencia.</p>
+      <p class="where">Manual de Facultad y Manual del Educador Ignaciano · AI Owner con Rectoría</p>
+    </div></details>
+    </div>
+  </article>
+
+  <article class="finding" data-p="critico" data-a="registro">
+    <div class="stripe"></div><div class="fbody">
+    <div class="fhead"><span class="fcode">2.1</span><h3>«Herramienta de IA aprobada» no está definida ni publicada</h3><span class="badge critico">Crítico</span></div>
+    <div class="cites"><span class="cite">Compendio pág. 9 num. 2</span><span class="cite">Compendio pág. 10 num. 1</span></div>
+    <blockquote class="vigente">«Cuando esté permitido, los estudiantes pueden utilizar herramientas de IA aprobadas para…»</blockquote>
+    <p class="hz">El término tiene efecto normativo y no se define. El Repositorio parecería ser la respuesta pero hoy no puede serlo: su autoría es de un departamento y no de la instancia que aprueba; no tiene fecha, versión ni vigencia pese a que su contenido es de los más perecederos; se describe como recurso de apoyo; ningún manual lo menciona, de modo que normativamente no existe; y contradice la Tabla 1.</p>
+    <details class="prop"><summary>Lenguaje propuesto</summary><div class="propbox">
+      <p><strong>Herramienta de IA aprobada.</strong> Herramienta que aparece en el Registro Institucional de Herramientas de Inteligencia Artificial con clasificación vigente que autoriza el uso propuesto, para la población y el nivel correspondientes. El Registro es mantenido por [instancia competente], se publica en [ubicación] y se actualiza conforme a la sección de vigencia y revisión. Ninguna herramienta se entiende aprobada por el hecho de estar disponible, ser de uso común o haber sido utilizada previamente.</p>
+      <p>Clasificar en cinco estados en lugar de un sí o no: aprobada institucionalmente · aprobada para uso docente o administrativo · permitida a nivel de curso · no permitida (con motivo) · en evaluación (con fecha de decisión).</p>
+      <p>El Repositorio existente pasa a ser el <strong>anexo pedagógico</strong> del Registro, que es donde su contenido aporta más valor.</p>
+      <p>Con la separación de instrumentos del hallazgo 2.4 la definición queda más limpia todavía: el manual define <strong>qué es</strong> una herramienta aprobada y <strong>quién</strong> aprueba; el Registro dice <strong>cuáles</strong> lo están.</p>
+      <p class="where">Definiciones de ambos manuales · Registro publicado en PlusPortals e intranet · AIM Team con Data/IT Lead</p>
+    </div></details>
+    </div>
+  </article>
+
+  <article class="finding" data-p="alto" data-a="autorizacion">
+    <div class="stripe"></div><div class="fbody">
+    <div class="fhead"><span class="fcode">1.1</span><h3>El código IA no está definido en ninguna parte</h3><span class="badge alto">Alto</span></div>
+    <div class="cites"><span class="cite">Manual de Facultad pág. 63 num. 1</span><span class="cite">Compendio pág. 9</span></div>
+    <blockquote class="vigente">«El profesor identificará con el código IA en el silabario en qué trabajos los estudiantes podrán utilizar IA.»</blockquote>
+    <p class="hz">Cero coincidencias de «código IA» fuera de esa única oración en el compendio, los tres manuales, el Repositorio y la orientación. El numeral obliga a usar un instrumento que la política no provee. Cada profesor inventará su notación y el estudiante enfrentará convenciones distintas en cada curso — lo contrario del propósito de un código común. El contraste con el numeral 6, que sí fija lenguaje obligatorio, indica omisión y no delegación deliberada.</p>
+    <details class="prop"><summary>Lenguaje propuesto</summary><div class="propbox">
+      <p>El profesor identificará en el silabario, mediante la Escala Institucional de Uso de IA, el nivel autorizado para cada trabajo o evaluación. El nivel se indicará con su etiqueta completa la primera vez y con su código en las referencias subsiguientes. <strong>Cuando un trabajo no indique nivel, se entenderá que aplica el nivel IA-0.</strong></p>
+      <p>La última oración fija una regla por defecto y elimina la zona gris de los trabajos sin marcar, que es donde surge la mayoría de los conflictos de integridad. La escala propuesta se detalla en la sección siguiente.</p>
+      <p class="where">Manual de Facultad pág. 63 y anexo · silabario modelo · Instructional AI Lead</p>
+    </div></details>
+    </div>
+  </article>
+
+  <article class="finding" data-p="alto" data-a="registro">
+    <div class="stripe"></div><div class="fbody">
+    <div class="fhead"><span class="fcode">2.2</span><h3>No hay protocolo de evaluación de herramientas</h3><span class="badge alto">Alto</span></div>
+    <div class="cites"><span class="cite">Manual de Facultad pág. 64 num. 5</span><span class="cite">num. 3 · especificación departamental</span></div>
+    <p class="hz">Tres numerales invocan tres niveles de autoridad sin decir cuál prevalece ni quién decide. El numeral 5 deposita la evaluación en cada profesor individualmente, con un único criterio explícito. El numeral 2 habla de herramientas «aprobadas», lo que implica aprobación institucional. El numeral 3 presupone especificaciones departamentales que ninguna disposición obliga a producir ni publicar. Un profesor diligente no tiene contra qué evaluar, y «según el contexto de nuestra población estudiantil» no dice qué del contexto importa.</p>
+    <details class="prop"><summary>Lenguaje propuesto</summary><div class="propbox">
+      <p><strong>Num. 3.</strong> La evaluación y clasificación de herramientas corresponde a [instancia competente], conforme a la Rúbrica Institucional de Evaluación. Los departamentos podrán establecer especificaciones adicionales para su materia dentro de lo autorizado en el Registro; ninguna especificación departamental podrá ampliar una autorización institucional.</p>
+      <p><strong>Num. 5.</strong> El profesor determinará, dentro de las herramientas del Registro y conforme a la Escala Institucional, qué nivel corresponde a cada trabajo, atendiendo al objetivo de aprendizaje, la edad y madurez del grupo, los acomodos vigentes y el acceso equitativo del estudiantado. Quien desee usar una herramienta no incluida en el Registro la solicitará mediante el procedimiento establecido, sin utilizarla con estudiantes antes de recibir determinación.</p>
+      <p><strong>Rúbrica de diez criterios:</strong> propósito pedagógico · edad y términos del proveedor · datos y entrenamiento · marco legal (FERPA, COPPA, normativa de PR) · accesibilidad y acomodos · equidad y costo · supervisión humana · alineación con la misión · salida y portabilidad · vigencia.</p>
+      <p>Complemento indispensable: una vía documentada de solicitud con plazo comprometido, y registro de las determinaciones aprobadas y denegadas con motivo. Sin la vía de solicitud, la rúbrica se percibe como obstáculo y se elude.</p>
+      <p class="where">Manual de Facultad pág. 64 · AI Task Force</p>
+    </div></details>
+    </div>
+  </article>
+
+  <article class="finding" data-p="alto" data-a="integridad">
+    <div class="stripe"></div><div class="fbody">
+    <div class="fhead"><span class="fcode">3.1</span><h3>La definición de plagio no distingue tres faltas distintas</h3><span class="badge alto">Alto</span></div>
+    <div class="cites"><span class="cite">Compendio pág. 12 · Gehring &amp; Pavela</span><span class="cite">Compendio pág. 13 · Expectativas</span></div>
+    <blockquote class="vigente">«Plagiar es tomar las ideas, escritos o trabajos realizados por otros y o por IA presentarlos como originales.»</blockquote>
+    <p class="hz"><strong>Lógico:</strong> la definición de deshonestidad de la pág. 12 exige un tercero que pueda otorgar o negar permiso; la de la pág. 13 coloca a la IA como uno de ellos. <strong>Jurídico:</strong> la protección de derecho de autor exige autoría humana — la Oficina de Derechos de Autor lo reafirmó en 2025: la salida puramente generada por IA no es protegible y los prompts solos no confieren autoría. Sin autor no hay obra protegida ni plagio en sentido propio. Eso no exime de nada: identifica mal el agravio, que es la falsa representación de la autoría y del proceso. <strong>De redacción:</strong> «y o» por «y/o» en la oración que define el tipo, que es la que se cita al sancionar.</p>
+    <details class="prop"><summary>Lenguaje propuesto</summary><div class="propbox">
+      <p>No se aceptará copiar ni plagiar trabajos. <strong>Plagiar</strong> es tomar ideas, escritos, obras o trabajos <strong>de autoría humana</strong> —directamente o por medio de una herramienta de inteligencia artificial— y presentarlos como propios sin la atribución correspondiente. Constituyen faltas distintas del plagio, e igualmente sancionables, el <strong>uso no autorizado</strong> y el <strong>uso no declarado</strong> de herramientas de inteligencia artificial.</p>
+      <ul>
+        <li><strong>a. Plagio</strong> — apropiación de obra de autoría humana, con o sin intermediación de IA. <em>Entregar un pasaje que la IA reprodujo de un artículo, sin cita.</em></li>
+        <li><strong>b. Uso no autorizado</strong> — usar IA donde no estaba autorizada o más allá del nivel autorizado. <em>Usar IA en un trabajo IA-0.</em></li>
+        <li><strong>c. Uso no declarado o falsa representación de autoría</strong> — usar IA donde sí estaba permitida, sin declararlo. <em>Trabajo IA-2 entregado sin declaración.</em></li>
+      </ul>
+      <p>Añadir a la lista de ejemplos un tipo hoy no contemplado: <em>generar, difundir o poseer representaciones sintéticas de la imagen, voz o semejanza de cualquier miembro de la comunidad escolar, creadas mediante inteligencia artificial, sin su autorización expresa.</em> La <strong>Ley 163-2026</strong> de Puerto Rico extendió la definición de «imagen» de la Ley 139-2011 para incluir representaciones creadas mediante algoritmos o modelos de IA.</p>
+      <p class="where">Manual del Estudiante · Expectativas y ejemplos de deshonestidad · Dirección Académica</p>
+    </div></details>
+    </div>
+  </article>
+
+  <article class="finding" data-p="alto" data-a="integridad">
+    <div class="stripe"></div><div class="fbody">
+    <div class="fhead"><span class="fcode">3.3</span><h3>Cita y declaración de uso se tratan como el mismo acto</h3><span class="badge alto">Alto</span></div>
+    <div class="cites"><span class="cite">Compendio pág. 10 num. 2</span><span class="cite">MLA · Beyond Citation</span><span class="cite">APA · Parte 2</span></div>
+    <blockquote class="vigente">«El estudiante debe declarar explícitamente el uso de IA en el trabajo. Según las instrucciones impartidas por el profesor, el estudiante utilizará las siguientes guías de cómo citar el uso de IA…»</blockquote>
+    <p class="hz">La disposición enuncia un deber de declaración y lo remite a guías de citación. Las propias organizaciones que la política invoca lo separan: MLA dedica un documento aparte al asunto —la cita «apunta a una fuente exacta», mientras la salida de IA «no es una fuente en el sentido tradicional»— y APA trata en entradas distintas los formatos de referencia, la IA integrada en software de uso común, y si la IA está permitida. Falta además distinguir el uso sustantivo de la asistencia rutinaria: sin esa distinción, el deber abarca el corrector ortográfico, el autocompletado y el traductor — es decir, todo, y por tanto nada. Y los manuales citan solo APA y MLA mientras la orientación dice «MLA, APA, Chicago, Vancouver».</p>
+    <details class="prop"><summary>Lenguaje propuesto</summary><div class="propbox">
+      <p><strong>2. Declaración de uso.</strong> Cuando el uso esté autorizado y el estudiante lo utilice de forma sustantiva, incluirá una Declaración de Uso de IA conforme al formato institucional. Se entiende por uso sustantivo la generación de contenido, ideas, estructura, código, análisis o traducción de pasajes de fondo. <strong>No requiere declaración la asistencia mecánica rutinaria</strong> —corrección ortográfica o gramatical, formato, texto predictivo, sinónimos— salvo que el profesor lo requiera.</p>
+      <p><strong>2.1 Cita.</strong> Cuando el trabajo reproduzca, cite o se apoye en una salida concreta, se citará según el estilo requerido por el profesor. La inteligencia artificial no se consigna nunca como autor ni coautor. La declaración y la cita son requisitos distintos y no se sustituyen: puede haber uso que se declara y no se cita, pero no salida citada que no se declare.</p>
+      <p><strong>2.2 Documentación.</strong> El profesor podrá requerir que el estudiante conserve y presente evidencia del proceso —borradores, esquemas, transcripción del intercambio.</p>
+      <p><strong>Formato de declaración</strong> — nivel autorizado · herramienta y versión · fecha · para qué la usé · qué hice con lo que produjo · declaración de que el contenido, el análisis y las conclusiones son míos, que verifiqué lo que incorporé y que no usé IA más allá de lo declarado. Cuatro líneas se cumplen; una remisión a un blog de estilo, no.</p>
+      <p><strong>Vocabulario</strong> — reservar tres términos: <em>citar</em> (referencia formal), <em>declarar</em> (divulgar el uso), <em>documentar</em> (conservar evidencia).</p>
+      <p class="where">Manual del Estudiante y Manual de Facultad · Instructional AI Lead</p>
+    </div></details>
+    </div>
+  </article>
+
+  <article class="finding" data-p="alto" data-a="gobernanza">
+    <div class="stripe"></div><div class="fbody">
+    <div class="fhead"><span class="fcode">6.2</span><h3>Sin debido proceso ni estándar probatorio para casos de IA</h3><span class="badge alto">Alto</span></div>
+    <div class="cites"><span class="cite">Compendio pág. 19 · Procedimiento</span><span class="cite">Repositorio · ficha de Brisk</span></div>
+    <p class="hz">El procedimiento habilita sanciones que llegan a la suspensión, pero nada establece cómo se prueba que hubo uso de IA. No se dispone que el resultado de un detector no es concluyente, no se fija estándar de prueba, y no se reconoce expresamente el derecho del estudiante a explicarse. La advertencia correcta ya existe en el conjunto documental, pero en el lugar sin efecto normativo: el Repositorio dice que el detector es «un punto de partida para conversación, no veredicto definitivo». Los detectores tienen falsos positivos documentados y sesgos conocidos contra quienes escriben en un segundo idioma — población relevante en una institución bilingüe.</p>
+    <details class="prop"><summary>Lenguaje propuesto</summary><div class="propbox">
+      <ul>
+        <li><strong>a.</strong> El resultado de una herramienta de detección tiene carácter indiciario. En ningún caso constituye, por sí solo, fundamento suficiente para una determinación.</li>
+        <li><strong>b.</strong> La conversación con el estudiante y el examen de la evidencia de proceso —borradores, versiones, historial de edición, capacidad de explicar su trabajo— son elementos centrales de la investigación.</li>
+        <li><strong>c.</strong> El estudiante será informado de la situación que se le atribuye y tendrá oportunidad de ser oído antes de que se adopte una determinación.</li>
+        <li><strong>d.</strong> Cuando la instrucción del trabajo haya sido ambigua respecto del uso de IA, o se trate de una primera situación, se privilegiará la respuesta formativa sobre la sanción.</li>
+        <li><strong>e.</strong> La determinación se hará constar por escrito, con indicación de los elementos en que se fundamenta.</li>
+      </ul>
+      <p>El inciso (d) es coherente con la sección de dignidad del propio documento: la presunción de buena fe es una forma concreta de respeto, y en una política nueva la ambigüedad de la instrucción será común durante el primer año.</p>
+      <p class="where">Manual del Estudiante · PROCEDIMIENTO · Decanato con Dirección Académica</p>
+    </div></details>
+    </div>
+  </article>
+
+  <article class="finding" data-p="alto" data-a="gobernanza">
+    <div class="stripe"></div><div class="fbody">
+    <div class="fhead"><span class="fcode">6.3</span><h3>«Nunca para delegar completamente» abre lo que quiere cerrar</h3><span class="badge alto">Alto</span></div>
+    <div class="cites"><span class="cite">Manual de Facultad pág. 63 num. 4</span><span class="cite">Educador Ignaciano · 703 (z)</span></div>
+    <blockquote class="vigente">«La inteligencia artificial deberá utilizarse únicamente como herramienta de apoyo y nunca para delegar completamente decisiones que afecten el desempeño del estudiante, la dignidad, el bienestar, o el trato justo hacia los demás.»</blockquote>
+    <p class="hz"><strong>El adverbio.</strong> Prohibir la delegación <em>completa</em> autoriza por implicación la parcial, sin umbral ni registro. En la práctica casi ninguna delegación es total: siempre hay una intervención humana final, aunque sea nominal. <strong>Dos versiones divergentes.</strong> La del Manual de Facultad pierde «disciplinarias, administrativas o pastorales», pierde «la evaluación» y pierde «familias y miembros de la comunidad escolar» frente a 703 (z). Es la misma norma escrita dos veces y ya separada al publicarse. <strong>Mal ubicada.</strong> Vive entre cinco numerales que tratan de cómo el profesor autoriza el uso del estudiante; este trata de la conducta del profesor.</p>
+    <details class="prop"><summary>Lenguaje propuesto</summary><div class="propbox">
+      <p><strong>Decisiones de consecuencia y supervisión humana.</strong> Toda decisión de consecuencia sobre una persona corresponde a un decisor humano identificable, que responde por ella y debe poder explicarla sin remitirse a una herramienta. La inteligencia artificial puede informar el análisis; no adopta la decisión.</p>
+      <p>Se consideran decisiones de consecuencia, sin que la enumeración sea limitativa: la nota y la evaluación sumativa; la promoción y la retención; las medidas disciplinarias y los referidos; la determinación de acomodos; las cartas de recomendación; la admisión; la ayuda económica; y la evaluación, contratación o separación de personal.</p>
+      <p>En estas decisiones: la salida de una herramienta no puede ser el único fundamento; la revisión humana se hará constar; y cuando una herramienta haya intervenido de forma sustantiva en el análisis, se hará constar en el expediente de la decisión.</p>
+      <p><strong>Cuestión abierta que conviene resolver:</strong> ¿puede un profesor usar IA para corregir trabajo estudiantil y asignar notas? El Repositorio incluye Gradescope y Brisk con esa función, 703 (z) menciona «la evaluación», y nada exige informar al estudiante. Si el estudiante debe declarar su uso, la simetría sugiere que la institución también.</p>
+      <p class="where">Una sola fuente normativa, con remisión cruzada desde el otro manual · Dirección Académica</p>
+    </div></details>
+    </div>
+  </article>
+
+  <article class="finding" data-p="alto" data-a="institucional">
+    <div class="stripe"></div><div class="fbody">
+    <div class="fhead"><span class="fcode">7.1</span><h3>Vacío de IA institucional, de operaciones y de gerencia</h3><span class="badge alto">Alto</span></div>
+    <div class="cites"><span class="cite">Educador Ignaciano · Sección 703</span></div>
+    <p class="hz">Las únicas disposiciones sobre IA institucional son normas de conducta individual del empleado. No hay nada sobre adquisición y evaluación de proveedores con funciones de IA ni acuerdos de tratamiento de datos; IA en admisiones, personal, ayuda económica, retención, predicción de matrícula o analítica disciplinaria; funciones de IA que los proveedores activan por defecto en PlusPortals, Microsoft 365 o Turnitin, sin nadie designado para detectarlas o desactivarlas; IA para corregir trabajo estudiantil y asignar notas; ni retención de datos y cuentas institucionales frente a personales.</p>
+    <details class="prop"><summary>Lenguaje propuesto</summary><div class="propbox">
+      <p>Autorizar la elaboración de una <strong>Política de Inteligencia Artificial Institucional</strong> de nivel administrativo, distinta de la académica, con la estructura de gobernanza del hallazgo 6.1 como base, que cubra:</p>
+      <ul>
+        <li>Evaluación y adquisición de proveedores con funciones de IA, con requisito de acuerdo de tratamiento de datos</li>
+        <li>Inventario de funciones de IA activas en las plataformas institucionales, con revisión periódica y responsable designado</li>
+        <li>IA en admisión, personal, ayuda económica y analítica institucional, con la regla de decisiones de consecuencia</li>
+        <li>Clasificación de datos institucionales y reglas de ingreso a herramientas de IA</li>
+        <li>Procedimiento de incidentes de privacidad y seguridad</li>
+        <li>Formación obligatoria del personal administrativo</li>
+      </ul>
+      <p>Los sujetos, los riesgos y los decisores de esta materia son distintos de los de la política académica, y confundirlos en un solo instrumento debilita a ambos. Ambas políticas deben remitirse mutuamente sin superponerse.</p>
+      <p class="where">Nuevo instrumento · Rectoría y Junta de Directores</p>
+    </div></details>
+    </div>
+  </article>
+
+  <article class="finding" data-p="alto" data-a="legal">
+    <div class="stripe"></div><div class="fbody">
+    <div class="fhead"><span class="fcode">8.1</span><h3>No hay regla de prevalencia y «la legislación aplicable» nunca se identifica</h3><span class="badge alto">Alto</span></div>
+    <div class="cites"><span class="cite">Compendio pág. 17 · nota al calce</span><span class="cite">Compendio pág. 16</span></div>
+    <blockquote class="vigente">«Independientemente de lo dispuesto por cada proveedor, el Colegio San Ignacio de Loyola podrá establecer requisitos y restricciones… de conformidad con… la legislación aplicable.»</blockquote>
+    <p class="hz">El documento resuelve la mitad del problema, y bien: afirma la autoridad institucional sobre los términos del proveedor. Falta la regla de prevalencia cuando las tres capas divergen y quién la determina; falta identificar la ley; falta el caso inverso —que los términos del proveedor sean más estrictos, o que cambien a mitad de año, pese a que la Tabla 1 advierte que «pueden modificarse sin previo aviso» sin designar a nadie para vigilarlo; y falta tratar los términos del proveedor como obligaciones contractuales de la institución, con versiones educativas y acuerdos de datos.</p>
+    <details class="prop"><summary>Lenguaje propuesto</summary><div class="propbox">
+      <p><strong>Concurrencia de normas.</strong> Al uso de herramientas de IA en el Colegio concurren tres cuerpos de normas: los términos del proveedor, las políticas institucionales y la legislación estatal y federal aplicable. Cuando difieran, <strong>se aplicará siempre la más protectora del estudiante</strong>. La determinación corresponde a Dirección Académica en consulta con Tecnología y, cuando proceda, con la asesoría legal.</p>
+      <p>El Colegio podrá establecer requisitos más estrictos que los del proveedor, pero no podrá autorizar un uso que los términos del proveedor prohíban.</p>
+      <p>El Data/IT Lead dará seguimiento a los cambios de términos y requisitos de edad de las herramientas del Registro. Cuando un cambio deje sin efecto una autorización ya utilizada en un trabajo asignado, el profesor ofrecerá la alternativa educativa sin desventaja para el estudiante.</p>
+      <p><strong>Registro legal a nombrar:</strong> FERPA (expedientes y excepción de <em>school official</em>) · COPPA (menores de 13) · PPRA · IDEA y Sección 504 (acomodos y tecnología asistiva) · Ley 163-2026 de PR (imagen y voz frente a IA) · Ley 116-2026 de PR (notificación de interacción con IA y derecho a intervención humana; aplicable al gobierno, se adopta como estándar de referencia).</p>
+      <p>El traslado de la Tabla 1 al Registro (hallazgo 2.4) es lo que hace practicable este seguimiento: mientras esa información viva en un manual, cada cambio de términos exigiría técnicamente una enmienda al manual.</p>
+      <p class="where">Manual del Estudiante, tras la nota al calce de la Tabla 1 · Dirección Académica con asesoría legal</p>
+    </div></details>
+    </div>
+  </article>
+
+  <article class="finding" data-p="alto" data-a="vigencia">
+    <div class="stripe"></div><div class="fbody">
+    <div class="fhead"><span class="fcode">9.1</span><h3>La política no tiene cláusula de vigencia ni de revisión</h3><span class="badge alto">Alto</span></div>
+    <div class="cites"><span class="cite">Manual del Estudiante · Enmiendas</span><span class="cite">Educador Ignaciano · reserva de enmienda</span></div>
+    <p class="hz">No hay fecha de efectividad de la política —solo «vigentes a agosto de 2026» en la Tabla 1—, ni versión, ni responsable, ni cadencia, ni registro de enmiendas. Lo único aplicable son las cláusulas genéricas de los manuales. Para una política sobre tecnología que cambia trimestralmente, y que el propio documento titula «Fase de Implementación», es insuficiente: una fase de implementación implica por definición una evaluación al término, y el documento no la establece.</p>
+    <details class="prop"><summary>Lenguaje propuesto</summary><div class="propbox">
+      <p><strong>Vigencia, revisión y enmiendas.</strong> Esta política entra en vigor el [fecha] y corresponde a la versión [x.x]. Su custodia corresponde al AI Owner.</p>
+      <p><strong>Revisión ordinaria</strong> — anual, antes del inicio del año escolar, considerando los incidentes registrados, las consultas atendidas, la retroalimentación de profesores, estudiantes y familias, los cambios de términos de los proveedores del Registro y los desarrollos legislativos.</p>
+      <p><strong>Revisión extraordinaria</strong> — cuando cambie la legislación aplicable; cuando un proveedor modifique términos o requisitos de edad afectando una autorización vigente; cuando un incidente revele un vacío; o cuando surja una categoría de herramienta no contemplada.</p>
+      <p><strong>Registro de enmiendas</strong> con fecha, versión y descripción del cambio. <strong>Comunicación</strong> a personal, estudiantes y familias antes de la entrada en vigor, indicando qué cambió y desde cuándo aplica.</p>
+      <p><strong>Cadencia del Registro Institucional.</strong> El Registro de Herramientas no queda sujeto a la cadencia anual de la política: se actualiza cuando cambia la realidad que consigna. Esa diferencia de ritmo es la razón de fondo para separar los instrumentos (hallazgo 2.4).</p>
+      <p><strong>Evaluación de la fase de implementación.</strong> Al cierre del año 2026-2027 el AI Owner presentará un informe con incidentes por tipo, consultas atendidas, grado de adopción de la Escala en los silabarios, solicitudes de herramientas y su resolución, y retroalimentación de la comunidad. Este informe alimentará la primera revisión ordinaria.</p>
+      <p class="where">Cierre de la política de IA en los tres manuales · AI Owner</p>
+    </div></details>
+    </div>
+  </article>
+
+  <article class="finding" data-p="alto" data-a="registro">
+    <div class="stripe"></div><div class="fbody">
+    <div class="fhead"><span class="fcode">2.4</span><h3>Los nombres comerciales no deberían vivir en el texto normativo</h3><span class="badge alto">Alto</span></div>
+    <div class="cites"><span class="cite">Compendio págs. 17-18 · Tabla 1</span><span class="cite">Recomendación estructural</span></div>
+    <blockquote class="vigente">«Requisitos de edad y acceso por proveedor […] (vigentes a agosto de 2026) […] Estos requisitos pueden modificarse sin previo aviso.»</blockquote>
+    <p class="hz">El texto normativo nombra siete productos comerciales y declara los requisitos de edad y consentimiento de cada uno. Es una de las decisiones más diligentes del documento y a la vez la que más rápido lo envejece. <strong>Caducidad:</strong> la propia tabla admite su perecebilidad dentro de un manual que se enmienda una vez al año. <strong>Confusión de instrumentos:</strong> un manual es normativo y anual; una lista de herramientas cambia cuando el proveedor decide, de modo que un cambio de edad exige técnicamente enmendar el manual para que el texto siga siendo cierto. <strong>Aval implícito:</strong> el nombre de un proveedor comercial en un manual institucional se lee como que el Colegio responde por sus prácticas de datos y su contenido. <strong>Representación de términos ajenos:</strong> al declarar en su texto lo que exige un tercero, el Colegio se hace representante ante sus familias de una condición que puede cambiar sin aviso.</p>
+    <p class="hz">El extremo contrario es peor: una política solo abstracta es inejecutable, que es el hallazgo 2.1. El asunto no es si se nombran las herramientas, sino <strong>en qué instrumento vive cada cosa</strong>. Y no hay nombre técnico que sustituya al comercial: nombrar el modelo en lugar del producto —GPT-4o en lugar de ChatGPT— es aún más perecedero, porque los modelos se reemplazan varias veces al año dentro del mismo producto. Lo estable es la <strong>función</strong>, que es la unidad de análisis del hallazgo 1.2.</p>
+    <details class="prop"><summary>Lenguaje propuesto</summary><div class="propbox">
+      <p><strong>Categorías funcionales de herramientas de inteligencia artificial.</strong> Para efectos de esta política, las herramientas se clasifican por la función que cumplen y no por su nombre comercial. Son categorías funcionales, entre otras: asistente conversacional de propósito general; tutor de inteligencia artificial con restricción pedagógica; generador de texto; generador de imagen, audio o video; sintetizador de voz o imagen de personas; transcriptor automático; traductor; asistente de búsqueda y síntesis; asistente de programación; herramienta de corrección y retroalimentación de trabajo estudiantil; detector de uso de inteligencia artificial; plataforma de analítica de datos de estudiantes; y agente de inteligencia artificial.</p>
+      <p>Las obligaciones, los límites de edad y los requisitos de consentimiento se establecen <strong>por categoría funcional</strong>. Los nombres comerciales no forman parte del texto normativo: constan en el Registro Institucional, con su categoría, clasificación vigente, límite de edad y requisito de consentimiento. Cuando esta política mencione una herramienta por su nombre, lo hará únicamente a modo de ejemplo y sin carácter exhaustivo.</p>
+      <p>Se exceptúan las plataformas que el Colegio provee mediante contrato institucional, que sí se nombran en los manuales cuando de ese nombre depende una autorización, un consentimiento o una obligación de la comunidad escolar.</p>
+      <p><strong>Traslado de la Tabla 1.</strong> La tabla pasa al Registro, donde puede versionarse y fecharse con la frecuencia que su contenido exige. El manual conserva la remisión y la regla que la tabla implementa, que es su aportación normativa real: «Los requisitos de edad, consentimiento y uso que establece cada proveedor constituyen un mínimo y no un máximo. El Colegio podrá establecer requisitos más estrictos, y no autorizará ningún uso que los términos del proveedor prohíban.»</p>
+      <p><strong>Reparto que resulta:</strong> los <strong>manuales</strong> llevan categorías, criterios, autoridad y obligaciones, y cambian una vez al año. El <strong>Registro Institucional</strong> lleva las herramientas nombradas con fecha y versión, y cambia cuando cambia la realidad. El <strong>Repositorio</strong> queda como anexo pedagógico subordinado al Registro.</p>
+      <p><strong>Efecto en cadena:</strong> limpia el hallazgo 2.1, refuerza el 1.2, disuelve en buena medida el 2.3 y hace practicable el seguimiento de proveedores del 8.1.</p>
+      <p class="where">Definiciones de ambos manuales · traslado de la Tabla 1 al Registro · AI Owner con el AI Task Force</p>
+    </div></details>
+    </div>
+  </article>
+
+  <article class="finding" data-p="medio" data-a="integridad">
+    <div class="stripe"></div><div class="fbody">
+    <div class="fhead"><span class="fcode">3.2</span><h3>Falta el principio de autoría humana</h3><span class="badge medio">Medio</span></div>
+    <div class="cites"><span class="cite">MH 52 · MH 112</span><span class="cite">APA · MLA</span></div>
+    <p class="hz">El documento no enuncia expresamente que la IA no puede ser autora, y de esa omisión derivan la ambigüedad de la definición de plagio, la confusión entre cita y declaración, y la falta de una regla clara de responsabilidad. El fundamento ya está escrito: la autoría presupone intención, responsabilidad y agencia moral, y atribuirla a un sistema le concede una categoría que la antropología del documento reserva a la persona. El movimiento que reduce a la persona a función —MH 112, «un proyecto que debe optimizarse»— es el mismo que eleva a la máquina a sujeto. Y la práctica editorial ya coincide por razones técnicas independientes: MLA rechaza a la IA como autora porque no puede asumir responsabilidad.</p>
+    <details class="prop"><summary>Lenguaje propuesto</summary><div class="propbox">
+      <p><strong>La autoría y la responsabilidad son siempre humanas.</strong> La inteligencia artificial es instrumento, no sujeto. No es autora ni coautora de ningún trabajo académico, institucional o pastoral del Colegio: se declara y se cita como herramienta o como programa, nunca como autor. Quien presenta un trabajo responde por su contenido, su veracidad y su forma, con independencia de las herramientas que haya empleado. Atribuir autoría a un sistema equivale a atribuirle intención y responsabilidad, categorías que corresponden a la persona en virtud de la dignidad que le es propia.</p>
+      <p>Este principio resuelve simultáneamente la definición de plagio, la regla de citación y el estándar de supervisión en las decisiones de consecuencia.</p>
+      <p class="where">Manual del Estudiante · sección de fundamentos · AI Owner con validación de la instancia pastoral</p>
+    </div></details>
+    </div>
+  </article>
+
+  <article class="finding" data-p="medio" data-a="autorizacion">
+    <div class="stripe"></div><div class="fbody">
+    <div class="fhead"><span class="fcode">1.2</span><h3>La política regula herramientas donde debería regular acciones</h3><span class="badge medio">Medio</span></div>
+    <div class="cites"><span class="cite">Compendio pág. 13 · reproducción de clases</span><span class="cite">Repositorio · ficha de Otter.ai</span></div>
+    <p class="hz">El marco autoriza y restringe herramientas —una lista de plataformas con un límite de edad. Pero cada herramienta empaqueta docenas de funciones y añade más sin aviso: autorizar una plataforma equivale a autorizar lo que su proveedor despliegue el mes siguiente. El ejemplo ya está en los documentos: el compendio prohíbe reproducir audio e imágenes de clases sin autorización del maestro, y el Repositorio recomienda Otter.ai para «crear notas automáticas de clases para estudiantes ausentes» sin reiterar el requisito.</p>
+    <details class="prop"><summary>Lenguaje propuesto</summary><div class="propbox">
+      <p>La autorización de una herramienta no implica la autorización de todas sus funciones. El Registro Institucional especificará, para cada herramienta, qué funciones están autorizadas, para quién y bajo qué condiciones. La incorporación de nuevas funciones por parte del proveedor no se entenderá autorizada hasta que la instancia competente las evalúe. <strong>La disponibilidad de una función en un equipo o plataforma del Colegio no constituye autorización para su uso.</strong></p>
+      <p><strong>Funciones a clasificar:</strong> generar texto · generar imagen, audio o video · clonar voz o rostro · transcribir · resumir · traducir · ofrecer tutoría · corregir o retroalimentar trabajo estudiantil · detectar uso de IA · analizar datos de estudiantes · buscar y sintetizar · generar o depurar código · ejecutar tareas de forma autónoma mediante agentes.</p>
+      <p>Cada función con cuatro atributos: quién puede usarla, sobre qué datos, con qué autorización previa y con qué supervisión humana.</p>
+      <p>Esta lista es, en la práctica, la <strong>taxonomía funcional</strong> que el hallazgo 2.4 propone llevar al texto normativo en lugar de los nombres comerciales. Conviene redactarla una sola vez y que ambos hallazgos remitan a ella.</p>
+      <p class="where">Manual de Facultad pág. 63 · Registro Institucional · AI Task Force</p>
+    </div></details>
+    </div>
+  </article>
+
+  <article class="finding" data-p="medio" data-a="definiciones">
+    <div class="stripe"></div><div class="fbody">
+    <div class="fhead"><span class="fcode">4.1</span><h3>La sección de definiciones tiene dos entradas y necesita once</h3><span class="badge medio">Medio</span></div>
+    <div class="cites"><span class="cite">Compendio pág. 15 · Definiciones</span><span class="cite">Sección 703 · «tecnologías emergentes»</span></div>
+    <p class="hz">La sección contiene solo inteligencia artificial e IA generativa, ambas de la misma fuente. «Tecnologías emergentes» aparece dos veces sin definir, pese a que en la Sección 703 carga peso normativo —«particularmente al utilizar herramientas y tecnologías emergentes»—: si «particularmente» activa un deber reforzado, hay que saber cuándo se activa.</p>
+    <details class="prop"><summary>Lenguaje propuesto</summary><div class="propbox">
+      <p><strong>Agentes de IA.</strong> Sistemas capaces de planificar y ejecutar tareas de varios pasos, utilizando otras herramientas o servicios, con intervención humana limitada o diferida. Su uso requiere autorización expresa y supervisión humana declarada, y no se entiende comprendido en la autorización de la herramienta que los aloja.</p>
+      <p><strong>Tecnologías emergentes.</strong> Herramientas, plataformas o funcionalidades cuyas capacidades, riesgos, implicaciones para los datos o términos de uso aún no son estables ni plenamente conocidos por el Colegio, incluyendo —sin limitarse a— las basadas en IA. Su uso exige discernimiento reforzado y consulta previa cuando involucre datos de estudiantes o decisiones sobre personas.</p>
+      <p><strong>Detector de uso de IA.</strong> Herramienta que estima la probabilidad de que un texto haya sido generado por IA. Su resultado tiene carácter indiciario y en ningún caso constituye, por sí solo, fundamento suficiente para una determinación disciplinaria.</p>
+      <p>Completar además: <strong>IA integrada o embebida</strong> · <strong>IA predictiva o analítica</strong> · <strong>sistema de decisión automatizada</strong> · <strong>alucinación</strong> · <strong>sesgo algorítmico</strong> · <strong>datos de entrenamiento</strong> · <strong>información personal identificable</strong> · <strong>herramienta aprobada</strong> (hallazgo 2.1).</p>
+      <p>La definición de tecnologías emergentes es funcional y no enumerativa de forma deliberada: una lista de tecnologías envejece en un semestre.</p>
+      <p class="where">Manual del Estudiante · sección DEFINICIONES · AI Task Force</p>
+    </div></details>
+    </div>
+  </article>
+
+  <article class="finding" data-p="medio" data-a="definiciones">
+    <div class="stripe"></div><div class="fbody">
+    <div class="fhead"><span class="fcode">4.2</span><h3>La política prohíbe la pereza cognitiva tres veces y no la nombra</h3><span class="badge medio">Medio</span></div>
+    <div class="cites"><span class="cite">Compendio pág. 11 · 15 · 16</span></div>
+    <blockquote class="vigente">«…evitar la dependencia del uso de IA como sustituto del pensamiento, investigación, creatividad o trabajo propio.»</blockquote>
+    <p class="hz">Una prohibición sin constructo no se puede enseñar, no se puede observar y no se puede evaluar — y el estudiante la recibe como desconfianza en lugar de como formación. Es el hallazgo con mayor rendimiento pedagógico del informe, porque su corrección no consiste en restringir más, sino en dar al profesor y al estudiante un vocabulario con el cual pensar la cuestión.</p>
+    <details class="prop"><summary>Lenguaje propuesto</summary><div class="propbox">
+      <p><strong>Discernimiento en el uso de la IA: cuándo la ayuda ayuda.</strong> No toda delegación de esfuerzo perjudica el aprendizaje. Una calculadora, un índice o una lista son formas legítimas de apoyar la memoria y la atención. Lo que decide si una ayuda ayuda es si la operación delegada era, precisamente, aquella que producía el aprendizaje. Distinguirlo caso por caso es un ejercicio de discernimiento, y aprender a hacerlo es parte de la formación que el Colegio busca.</p>
+      <ul>
+        <li><strong>Descarga cognitiva</strong> — delegar una operación mental a un apoyo externo. No es negativa en sí; la pregunta es qué se delegó.</li>
+        <li><strong>Pereza cognitiva</strong> — preferir sistemáticamente la ruta de menor esfuerzo cuando el esfuerzo es lo que forma la destreza.</li>
+        <li><strong>Tercerización del pensamiento</strong> — entregar la tarea intelectual completa, quedándose con el producto y sin el proceso.</li>
+        <li><strong>Erosión de destrezas</strong> — pérdida progresiva de una capacidad por falta de uso.</li>
+        <li><strong>Dependencia y sesgo de automatización</strong> — aceptar la salida sin verificarla, por su fluidez o aparente autoridad.</li>
+      </ul>
+      <p><strong>Respuestas pedagógicas correlativas</strong>, para el Manual de Facultad como práctica sugerida: artefactos de proceso · defensa oral breve · escritura y resolución en clase · ejercicios de auditoría de la salida (nivel IA-4) · pedir al estudiante que justifique por qué usó o no usó IA en cada etapa — que es, literalmente, un examen de conciencia aplicado al trabajo académico.</p>
+      <p class="where">Manual del Estudiante, antes de las expectativas · Instructional AI Lead</p>
+    </div></details>
+    </div>
+  </article>
+
+  <article class="finding" data-p="medio" data-a="consentimiento">
+    <div class="stripe"></div><div class="fbody">
+    <div class="fhead"><span class="fcode">5.2</span><h3>La alternativa educativa carece de procedimiento</h3><span class="badge medio">Medio</span></div>
+    <div class="cites"><span class="cite">Compendio pág. 17</span></div>
+    <blockquote class="vigente">«…el Colegio procurará ofrecer una alternativa educativa que permita alcanzar los mismos objetivos de aprendizaje.»</blockquote>
+    <p class="hz">Es una de las mejores cláusulas del documento y hoy es un compromiso sin procedimiento: no dice quién provee la alternativa, en qué plazo, con qué equivalencia ni con qué efecto en la nota. El verbo «procurará» además la debilita.</p>
+    <details class="prop"><summary>Lenguaje propuesto</summary><div class="propbox">
+      <p>Cuando un estudiante no pueda utilizar una herramienta específica por restricciones de edad, requisitos del proveedor, falta de consentimiento o disposiciones institucionales, el profesor <strong>ofrecerá</strong> una alternativa que permita alcanzar los mismos objetivos de aprendizaje y ser evaluada con los mismos criterios. La alternativa se comunicará al estudiante al momento de asignarse el trabajo o dentro de los dos días laborables siguientes a conocerse la restricción. <strong>La imposibilidad de usar una herramienta no podrá resultar en desventaja en la evaluación del estudiante.</strong></p>
+      <p class="where">Manual del Estudiante pág. 17 · Dirección Académica</p>
+    </div></details>
+    </div>
+  </article>
+
+  <article class="finding" data-p="medio" data-a="consentimiento">
+    <div class="stripe"></div><div class="fbody">
+    <div class="fhead"><span class="fcode">5.3</span><h3>Nada dispone sobre retención, cuentas y visibilidad</h3><span class="badge medio">Medio</span></div>
+    <div class="cites"><span class="cite">Compendio pág. 16-17 · Transparencia y datos</span></div>
+    <p class="hz">La política establece qué no debe ingresarse en las herramientas, pero nada dispone sobre lo que ya se ingresó: historiales de conversación y consultas que pueden contener trabajo estudiantil o información personal, sin expectativa de retención ni de eliminación. Y si un estudiante usa su cuenta personal para trabajo escolar, el Colegio no tiene visibilidad ni control alguno.</p>
+    <details class="prop"><summary>Lenguaje propuesto</summary><div class="propbox">
+      <p>Para el trabajo escolar se utilizarán preferentemente las cuentas y accesos que el Colegio provea. Cuando una herramienta autorizada se utilice mediante cuenta institucional, aplicarán las configuraciones de privacidad, los controles de edad y las políticas de retención que el Colegio establezca.</p>
+      <p>El estudiante y el empleado no deberán conservar en herramientas de IA —institucionales o personales— información personal identificable de terceros, y eliminarán los historiales que la contengan tan pronto adviertan su presencia, notificándolo conforme al procedimiento de incidentes.</p>
+      <p class="where">Sección de transparencia, privacidad y protección de datos · Data/IT Lead</p>
+    </div></details>
+    </div>
+  </article>
+
+  <article class="finding" data-p="medio" data-a="legal">
+    <div class="stripe"></div><div class="fbody">
+    <div class="fhead"><span class="fcode">8.2</span><h3>Falta disposición de vigilancia legislativa</h3><span class="badge medio">Medio</span></div>
+    <div class="cites"><span class="cite">P. de la C. 968 · nov. 2025</span><span class="cite">Ley 163-2026</span><span class="cite">Ley 116-2026</span></div>
+    <p class="hz">El <strong>P. de la C. 968</strong>, radicado por consenso de un grupo de trabajo con participación de asociaciones de educación privada, requeriría que las instituciones educativas públicas y privadas adopten políticas de uso ético de IA y las registren en el Departamento de Estado. Si avanza, el Colegio está en posición ventajosa —la política ya está adoptada y publicada— condicionada a que el documento resista una lectura externa. La <strong>Ley 163-2026</strong> extiende el derecho a la propia imagen a representaciones generadas por IA. La <strong>Ley 116-2026</strong> consagra, para servicios gubernamentales, el deber de notificar la interacción con IA y el derecho a intervención humana.</p>
+    <details class="prop"><summary>Lenguaje propuesto</summary><div class="propbox">
+      <p>Incorporar una disposición de seguimiento: el AI Owner informará anualmente a Dirección Académica sobre los desarrollos legislativos y regulatorios pertinentes al uso de inteligencia artificial en instituciones educativas, y recomendará las enmiendas que procedan conforme a la sección de vigencia y revisión.</p>
+      <p><strong>Salvedad:</strong> el estatus del trámite del P. de la C. 968 y el texto exacto de la Ley 163-2026 deben reverificarse antes de la adopción del informe. Los hallazgos de naturaleza jurídica deben pasar por la asesoría legal del Colegio.</p>
+      <p class="where">Sección de vigencia y revisión · AI Owner con asesoría legal</p>
+    </div></details>
+    </div>
+  </article>
+
+  <article class="finding" data-p="medio" data-a="equidad">
+    <div class="stripe"></div><div class="fbody">
+    <div class="fhead"><span class="fcode">9.3a</span><h3>La tecnología asistiva puede quedar prohibida sin proponérselo</h3><span class="badge medio">Medio</span></div>
+    <div class="cites"><span class="cite">Repositorio · ficha de Speechify</span><span class="cite">IDEA · Sección 504</span></div>
+    <p class="hz">Un trabajo identificado como IA-0 puede prohibirle a un estudiante con acomodos la herramienta que le da acceso al currículo: texto a voz, dictado, apoyo de organización. El Repositorio incluye Speechify precisamente para estudiantes con dislexia o TDAH. La política contempla el caso inverso —el estudiante que no puede usar una herramienta— pero no este.</p>
+    <details class="prop"><summary>Lenguaje propuesto</summary><div class="propbox">
+      <p>La tecnología asistiva autorizada como acomodo no se rige por el nivel de la Escala Institucional de Uso de IA asignado al trabajo, y su uso no requiere declaración salvo que el acomodo lo disponga. La Dirección Académica notificará a los profesores los acomodos vigentes que comprendan herramientas de esta naturaleza.</p>
+      <p class="where">Manual del Estudiante y Manual de Facultad · coordinar con el proceso de acomodos</p>
+    </div></details>
+    </div>
+  </article>
+
+  <article class="finding" data-p="medio" data-a="equidad">
+    <div class="stripe"></div><div class="fbody">
+    <div class="fhead"><span class="fcode">9.3b</span><h3>Herramientas pagas y acceso diferencial a las notas</h3><span class="badge medio">Medio</span></div>
+    <div class="cites"><span class="cite">Repositorio · Khanmigo · Flint · ChatGPT Plus</span><span class="cite">Orientación · «justo, equitativo para todos»</span></div>
+    <p class="hz">El Repositorio incluye herramientas de pago o freemium. Si un trabajo permitido presupone una versión paga que el Colegio no provee, se crea acceso diferencial a las notas — contrario al principio de uso «justo y equitativo para todos» que la orientación enuncia.</p>
+    <details class="prop"><summary>Lenguaje propuesto</summary><div class="propbox">
+      <p>Ningún trabajo requerido o con nota podrá depender de una versión paga de una herramienta de inteligencia artificial que el Colegio no provea a todo el estudiantado del curso.</p>
+      <p class="where">Manual de Facultad · expectativas de uso · Dirección Académica</p>
+    </div></details>
+    </div>
+  </article>
+
+  <article class="finding" data-p="bajo" data-a="saneamiento">
+    <div class="stripe"></div><div class="fbody">
+    <div class="fhead"><span class="fcode">9.2a</span><h3>Rangos de páginas inconsistentes entre el compendio y la orientación</h3><span class="badge bajo">Bajo</span></div>
+    <div class="cites"><span class="cite">Compendio · encabezados de sección</span><span class="cite">Orientación · diapositiva 1</span></div>
+    <p class="hz">Educador Ignaciano: 74-78 en el compendio, 74-77 en la orientación. Facultad: 62-65 frente a 63-64 y 76. Manual del Estudiante: 25-44 frente a 25-40. Tres discrepancias en tres referencias. Trivial de arreglar, pero en un documento cuyo propósito declarado es «facilitar su consulta», y en una política que exige a los estudiantes citar con precisión, la referencia debe ser exacta.</p>
+    <details class="prop"><summary>Consideraciones</summary><div class="propbox">
+      <p>Verificar los rangos contra la paginación final de cada manual y corregir en ambos documentos. Adoptar la convención de citar por manual y página de origen, no solo por la recopilación.</p>
+      <p class="where">Compendio y orientación al personal · AI Owner</p>
+    </div></details>
+    </div>
+  </article>
+
+  <article class="finding" data-p="bajo" data-a="saneamiento">
+    <div class="stripe"></div><div class="fbody">
+    <div class="fhead"><span class="fcode">9.2b</span><h3>Referencias incompletas y año discrepante</h3><span class="badge bajo">Bajo</span></div>
+    <div class="cites"><span class="cite">Compendio pág. 18 · Referencias</span></div>
+    <p class="hz">La entrada «León XIV. (2026). Magnifica Humanitas. Libreria Editrice Vaticana. https://www.vatican.va/» remite al dominio y no al documento, mientras el texto lo cita once veces por número de párrafo. La entrada «AI for Education. (2026). The SEE framework…» discrepa de las atribuciones en el texto, que dicen «(AI for Education, 2025)», en cuatro lugares.</p>
+    <details class="prop"><summary>Consideraciones</summary><div class="propbox">
+      <p>Completar la referencia de la encíclica con el URL específico del documento, y unificar el año de AI for Education entre la lista de referencias y las cuatro atribuciones en el texto. En un documento sobre integridad de las citas, la propia lista de referencias es la primera prueba de coherencia.</p>
+      <p class="where">Compendio y Manual del Estudiante · REFERENCIAS · AI Owner</p>
+    </div></details>
+    </div>
+  </article>
+
+  <article class="finding" data-p="bajo" data-a="saneamiento">
+    <div class="stripe"></div><div class="fbody">
+    <div class="fhead"><span class="fcode">9.2c</span><h3>Erratas y uso inconsistente de siglas</h3><span class="badge bajo">Bajo</span></div>
+    <div class="cites"><span class="cite">Compendio · Orientación · Repositorio</span></div>
+    <p class="hz">Compendio: «y o» por «y/o» en la definición de plagio. Orientación: «responsible» por «responsable», «professor» por «profesor». Repositorio: «rtutor», «se piede», «sEnlace», «Pagina» sin acento y acentuación faltante de manera generalizada. Y el conjunto alterna «IA» y «AI» — política de IA, pero AIM Team, AI Task Force, AI Owner.</p>
+    <details class="prop"><summary>Consideraciones</summary><div class="propbox">
+      <p>Pase de corrección editorial de los tres documentos antes de cualquier lectura externa. Adoptar «IA» en el texto normativo en español y conservar las siglas en inglés únicamente como nombres propios de los cuerpos, definidos en su primera mención.</p>
+      <p class="where">Los tres documentos · AI Owner</p>
+    </div></details>
+    </div>
+  </article>
+
+  <article class="finding" data-p="bajo" data-a="saneamiento">
+    <div class="stripe"></div><div class="fbody">
+    <div class="fhead"><span class="fcode">9.2d</span><h3>Estatus del compendio y archivo duplicado</h3><span class="badge bajo">Bajo</span></div>
+    <div class="cites"><span class="cite">Compendio · Introducción</span></div>
+    <blockquote class="vigente">«Este compendio no sustituye, modifica ni amplía las políticas institucionales vigentes.»</blockquote>
+    <p class="hz">Es el único lugar donde las disposiciones de los tres manuales aparecen juntas, y será leído y citado como si fuera la política. Además, el archivo «POLÍTICA DE INTEGRIDAD ACADÉMICA Y USO RESPONSABLE DE IA (MANUAL DEL ESTUDIANTE).pdf» es idéntico al compendio y no un extracto del Manual del Estudiante.</p>
+    <details class="prop"><summary>Consideraciones</summary><div class="propbox">
+      <p>Dar al compendio estatus formal de compilación oficial, con versión, fecha y responsable, manteniendo en cada sección la referencia exacta al manual y las páginas de origen una vez corregidas. Verificar si el archivo duplicado es una duplicación de nombre o un archivo pendiente de sustituir.</p>
+      <p class="where">Compendio · portada y encabezados · AI Owner</p>
+    </div></details>
+    </div>
+  </article>
+
+  <article class="finding" data-p="bajo" data-a="equidad">
+    <div class="stripe"></div><div class="fbody">
+    <div class="fhead"><span class="fcode">9.3c</span><h3>Materias no contempladas</h3><span class="badge bajo">Bajo</span></div>
+    <div class="cites"><span class="cite">Revisión del conjunto documental</span></div>
+    <p class="hz">Tres ausencias que conviene incorporar en la revisión del segundo semestre: uso de IA en solicitudes universitarias y ensayos de admisión, y en las cartas de recomendación que redacta el personal —materia con criterios propios en desarrollo por parte de las universidades y sin postura institucional; competencias académicas, feria científica y sociedades de honor, cuyas bases suelen tener reglas propias que hay que armonizar; y uso de IA por parte de las familias al apoyar tareas en el hogar — la política dispone que no se aceptan trabajos hechos por padres o tutores, y con IA en casa la línea es más difusa.</p>
+    <details class="prop"><summary>Consideraciones</summary><div class="propbox">
+      <p>Encomendar al AI Task Force la redacción de disposiciones para las tres materias, con consulta a la Oficina de Consejería y Orientación en el caso de las solicitudes universitarias, y orientación a las familias en lugar de solo una prohibición en el tercero.</p>
+      <p class="where">Revisión del segundo semestre · AI Task Force</p>
+    </div></details>
+    </div>
+  </article>
+
+  <article class="finding" data-p="bajo" data-a="equidad">
+    <div class="stripe"></div><div class="fbody">
+    <div class="fhead"><span class="fcode">9.3d</span><h3>Falta material derivado para estudiantes y familias</h3><span class="badge bajo">Bajo</span></div>
+    <div class="cites"><span class="cite">Compendio págs. 12-17</span></div>
+    <p class="hz">Las obligaciones que efectivamente atan al estudiante —declarar el uso, seguir las instrucciones del profesor, no ingresar datos personales, verificar la información— están repartidas entre las páginas 12 y 17, en un registro denso y en parte teológico.</p>
+    <details class="prop"><summary>Consideraciones</summary><div class="propbox">
+      <p>Producir una hoja de una página, «Lo que se espera de ti con la inteligencia artificial», y un documento de preguntas frecuentes para familias, <strong>derivados del manual y con referencia cruzada a él, nunca en sustitución</strong>. La política conserva su obligatoriedad; el material derivado gana cumplimiento.</p>
+      <p class="where">Nuevos materiales · Instructional AI Lead</p>
+    </div></details>
+    </div>
+  </article>
+
+  </div>
+  <div class="empty" id="empty" hidden>Ningún hallazgo coincide con el filtro.</div>
+</section>
+
+<section id="escala">
+  <div class="sechead"><span class="secnum">IV</span><h2>La escala que hoy falta</h2></div>
+  <p class="secintro">El numeral 1 obliga a marcar cada trabajo con un «código IA» que la política nunca define. Esta es la escala propuesta: cinco niveles, ascendentes en permiso y en exigencia de transparencia a la vez.</p>
+  <div class="scale">
+    <table>
+      <thead><tr><th>Código</th><th>Etiqueta</th><th>Qué autoriza</th><th>Qué debe hacer el estudiante</th></tr></thead>
+      <tbody>
+        <tr><td class="k">IA-0</td><td class="lbl">Sin asistencia de IA</td><td>Ninguna. Trabajo en clase, evaluación cerrada, destreza en formación.</td><td>Nada. Si el profesor lo pide, declaración de no uso.</td></tr>
+        <tr><td class="k">IA-1</td><td class="lbl">IA para prepararse</td><td>Uso previo a la producción: aclarar dudas, explorar, practicar. No se incorpora salida.</td><td>Declaración breve de uso.</td></tr>
+        <tr><td class="k">IA-2</td><td class="lbl">IA como asistente de proceso</td><td>Ideas, esquema, retroalimentación, revisión de forma. La redacción y el análisis son del estudiante.</td><td>Declaración + evidencia de proceso si se solicita.</td></tr>
+        <tr><td class="k">IA-3</td><td class="lbl">IA como colaboradora</td><td>Se puede incorporar salida de IA, identificada y verificada.</td><td>Declaración + cita de la salida incorporada.</td></tr>
+        <tr><td class="k">IA-4</td><td class="lbl">IA como objeto de estudio</td><td>El uso de la IA es la tarea: comparar salidas, auditar sesgos, identificar errores.</td><td>Declaración + documentación del ejercicio.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="secintro" style="margin-top:18px">Cinco niveles es el límite de lo que se retiene sin consultar una tabla. El nivel IA-4 cumple una función que ninguna prohibición cumple: convierte a la IA en objeto de análisis crítico, que es la forma más directa de formar el discernimiento que la política invoca.</p>
+</section>
+
+
+<section id="plan">
+  <div class="sechead"><span class="secnum">V</span><h2>Plan de acción</h2></div>
+  <p class="secintro">Veintiséis acciones con fase y responsable sugerido. El avance se guarda en tu navegador y se puede compartir por enlace, de modo que el Task Force pueda trabajar sobre este mismo documento sin necesidad de un servidor.</p>
+
+  <div class="planbar">
+    <div class="progress">
+      <div class="ptrack"><div class="pfill" id="pfill"></div></div>
+      <div class="plegend" id="plegend">0 de 26 completadas</div>
+    </div>
+    <div class="savenote" id="savenote"><span class="dot" id="savedot"></span><span id="savetext">Cargando…</span></div>
+    <div class="planactions">
+      <button type="button" class="f" id="sharebtn">Copiar enlace con este avance</button>
+      <button type="button" class="f ghost" id="resetbtn">Reiniciar</button>
+    </div>
+  </div>
+  <p class="planhelp">El avance se guarda en tu navegador. Para compartirlo, copia el enlace con el avance y envíalo: el estado viaja dentro del enlace, sin servidor de por medio.</p>
+
+  <div id="planroot"></div>
+</section>
+
+<section id="cierre">
+  <div class="sechead"><span class="secnum">VI</span><h2>Consideración final</h2></div>
+  <div class="closing">
+    <p class="pull">El compendio no es un documento defectuoso: es un documento nuevo en una materia nueva.</p>
+    <p>Sus vacíos son de la clase que solo aparece cuando una política empieza a aplicarse. Y todos los hallazgos de esta revisión son de una misma naturaleza: <strong>el texto vigente enuncia con corrección lo que el Colegio quiere, y en algunos puntos no provee todavía el instrumento con que hacerlo.</strong> Un código sin escala, una aprobación sin registro, un consentimiento sin formulario, una estructura de gobernanza sin mandato escrito.</p>
+    <p>Eso es también la mejor noticia: no hay que reconsiderar el diseño, hay que completarlo. Y el fundamento desde el cual completarlo ya está escrito, con una claridad que conviene no perder de vista mientras se discuten los detalles operativos: <strong>la inteligencia artificial se usa en el Colegio San Ignacio para cuidar lo que nos hace humanos, no para reemplazarlo.</strong></p>
+    <p>La recomendación de fondo es que ese principio se traduzca en una regla operativa concreta —<strong>la autoría y la responsabilidad son siempre humanas</strong>—, porque de ella derivan con naturalidad la definición de plagio, la regla de citación, el estándar de supervisión en las decisiones de consecuencia y el criterio con que un estudiante puede discernir, frente a cada trabajo, si la ayuda que está recibiendo lo está formando o lo está sustituyendo.</p>
+  </div>
+</section>
+
+<footer>
+  <p><strong>Fuentes.</strong> Documentos institucionales del Colegio San Ignacio de Loyola: compendio de disposiciones sobre IA (14 ago. 2026), Manual del Estudiante (rev. 6 ago. 2026), Manual de la Facultad y del Personal Administrativo Académico (ago. 2026), Manual del Educador Ignaciano (rev. julio 2026), orientación al personal de la fase de implementación (ago. 2026), Repositorio de Herramientas de IA, y requisitos BYOD 2026-2027.</p>
+  <div class="srcs">
+    <a href="https://style.mla.org/describing-ai-use/">MLA · Beyond Citation</a>
+    <a href="https://style.mla.org/citing-generative-ai-updated-revised/">MLA · Citing Generative AI</a>
+    <a href="https://apastyle.apa.org/blog/cite-generative-ai-references">APA · Reference formats</a>
+    <a href="https://apastyle.apa.org/blog/cite-generative-ai-search-software">APA · IA integrada en software</a>
+    <a href="https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-2-Copyrightability-Report.pdf">U.S. Copyright Office · Part 2</a>
+    <a href="https://www.plateapr.com/que-saber/proyectos-de-ley-regulacion-inteligencia-artificial-puerto-rico">PlateaPR · Medidas legislativas</a>
+    <a href="https://www.metro.pr/noticias/2025/11/09/radican-medida-para-regular-el-uso-de-la-inteligencia-artificial-en-escuelas/">P. de la C. 968</a>
+    <a href="https://aldia.microjuris.com/2026/08/07/fortalecen-la-proteccion-legal-de-la-propia-imagen-frente-a-la-inteligencia-artificial/">Microjuris · Ley 163-2026</a>
+  </div>
+  <div class="flag">
+    <p style="margin:0"><strong>Salvedades.</strong> Este documento no constituye asesoría legal. Los hallazgos de naturaleza jurídica —consentimiento parental, FERPA, COPPA, propiedad intelectual, debido proceso— deben someterse a la asesoría legal del Colegio antes de su adopción. El estatus del P. de la C. 968 y el texto exacto de la Ley 163-2026 deben reverificarse. La formulación doctrinal del principio de autoría humana debería validarla la instancia pastoral o teológica del Colegio.</p>
+    <p style="margin:10px 0 0"><strong>Nota metodológica.</strong> Revisión documental de las fuentes institucionales y verificación de las fuentes externas citadas. Se utilizó asistencia de inteligencia artificial en el análisis comparativo, la verificación de consistencia interna y la redacción del borrador. La autoría, las determinaciones de fondo y la responsabilidad por el contenido corresponden al autor. Prof. Guillermo Núñez · 9 de septiembre de 2026.</p>
+  </div>
+</footer>
+
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- findings filter ---------- */
+  var prio = "all", q = "";
+  var cards = Array.prototype.slice.call(document.querySelectorAll("#flist .finding"));
+  var countEl = document.getElementById("count");
+  var emptyEl = document.getElementById("empty");
+  var texts = cards.map(function(c){ return c.textContent.toLowerCase(); });
+
+  function applyFilter(){
+    var shown = 0;
+    cards.forEach(function(c,i){
+      var okP = (prio === "all") || (c.getAttribute("data-p") === prio);
+      var okQ = !q || texts[i].indexOf(q) !== -1;
+      var vis = okP && okQ;
+      c.hidden = !vis;
+      if (vis) shown++;
+    });
+    countEl.textContent = shown + " de " + cards.length;
+    emptyEl.hidden = shown !== 0;
+  }
+
+  document.getElementById("fprio").addEventListener("click", function(e){
+    var b = e.target.closest("button.f");
+    if (!b) return;
+    prio = b.getAttribute("data-k");
+    Array.prototype.forEach.call(this.querySelectorAll("button.f"), function(x){
+      x.setAttribute("aria-pressed", x === b ? "true" : "false");
+    });
+    applyFilter();
+  });
+
+  var qi = document.getElementById("q");
+  qi.addEventListener("input", function(){ q = this.value.trim().toLowerCase(); applyFilter(); });
+
+  /* ---------- plan de acción ---------- */
+  var FASES = [
+    {id:"inm", t:"Inmediata · septiembre"},
+    {id:"s1",  t:"Primer semestre · octubre a diciembre"},
+    {id:"s2",  t:"Segundo semestre · enero a mayo"},
+    {id:"cont",t:"Continua y cierre de año"}
+  ];
+  var TAREAS = [
+    ["t01","inm","Definir qué eje usa la columna de niveles del Repositorio; separar uso docente y estudiantil; fecha, versión y nota de subordinación","2.3","Instructional AI Lead"],
+    ["t02","inm","Publicar versión provisional del Registro Institucional de Herramientas","2.1","AIM Team · Data/IT Lead"],
+    ["t03","inm","Comunicar a la facultad el estatus del consentimiento y suspender asignaciones que lo requieran","5.1","Dirección Académica"],
+    ["t04","s1","Instrumento de consentimiento y notificación a familias","5.1","Dirección Académica · asesoría legal"],
+    ["t05","s1","Adoptar la Escala Institucional de Uso de IA y las plantillas de silabario","1.1","Instructional AI Lead"],
+    ["t06","s1","Rúbrica y procedimiento de evaluación de herramientas, con vía de solicitud","2.2","AI Task Force"],
+    ["t26","s1","Separación de instrumentos: categorías funcionales en los manuales y traslado de la Tabla 1 al Registro","2.4","AI Owner · AI Task Force"],
+    ["t07","s1","Enmiendas de integridad académica: tipos de falta y definición de plagio","3.1","Dirección Académica"],
+    ["t08","s1","Separar declaración de uso y cita; formato de declaración; distinción entre uso sustantivo y asistencia rutinaria","3.3","Instructional AI Lead"],
+    ["t09","s1","Anclaje normativo de la gobernanza y matriz de escalamiento","6.1","AI Owner · Rectoría"],
+    ["t10","s1","Cláusula de vigencia, revisión y enmiendas","9.1","AI Owner"],
+    ["t11","s1","Regla de concurrencia de normas y registro legal nombrado","8.1","Dirección Académica · asesoría legal"],
+    ["t12","s1","Debido proceso y valor probatorio en el PROCEDIMIENTO","6.2","Decanato · Dirección Académica"],
+    ["t13","s1","Regla de decisiones de consecuencia; resolver la corrección asistida por IA","6.3","Dirección Académica"],
+    ["t14","s1","Procedimiento de alternativa educativa","5.2","Dirección Académica"],
+    ["t15","s2","Principio de autoría humana, validado pastoralmente","3.2","AI Owner · instancia pastoral"],
+    ["t16","s2","Completar definiciones, incluidos agentes de IA y tecnologías emergentes","4.1","AI Task Force"],
+    ["t17","s2","Sección de discernimiento: descarga y pereza cognitiva","4.2","Instructional AI Lead"],
+    ["t18","s2","Matriz de funciones del Registro","1.2","AI Task Force"],
+    ["t19","s2","Política de IA Institucional, de operaciones y gerencia","7.1","Rectoría · Junta"],
+    ["t20","s2","Retención, cuentas institucionales y visibilidad","5.3","Data/IT Lead"],
+    ["t21","s2","Excepción de tecnología asistiva y regla de equidad","9.3a · 9.3b","Dirección Académica"],
+    ["t22","s2","Materiales derivados: hoja para estudiantes y FAQ de familias","9.3d","Instructional AI Lead"],
+    ["t23","s2","Materias no contempladas: solicitudes universitarias, competencias, uso familiar","9.3c","AI Task Force"],
+    ["t24","cont","Saneamiento documental: páginas, referencias, erratas, siglas, estatus del compendio","9.2a-d","AI Owner"],
+    ["t25","cont","Informe de evaluación de la fase de implementación","9.1","AI Owner"]
+  ];
+  var ESTADOS = [["pend","Pendiente"],["curso","En curso"],["hecho","Hecho"]];
+
+  var estado = {};
+  var planroot = document.getElementById("planroot");
+  var LSKEY = "csi-ia-plan-v1";
+
+  /* --- persistencia sin servidor: navegador del lector + enlace compartible --- */
+  function fromHash(){
+    var h = (location.hash || "").replace(/^#/, "");
+    if (h.indexOf("plan=") !== 0) return null;
+    try {
+      var b64 = h.slice(5).replace(/-/g, "+").replace(/_/g, "/");
+      var o = JSON.parse(decodeURIComponent(escape(atob(b64))));
+      return (o && o.tareas) ? o.tareas : null;
+    } catch (e) { return null; }
+  }
+  function fromLocal(){
+    try {
+      var raw = localStorage.getItem(LSKEY);
+      if (!raw) return null;
+      var o = JSON.parse(raw);
+      return (o && o.tareas) ? o.tareas : null;
+    } catch (e) { return null; }
+  }
+  function saveLocal(){
+    try { localStorage.setItem(LSKEY, JSON.stringify({ v: 1, tareas: estado })); return true; }
+    catch (e) { return false; }
+  }
+  function shareUrl(){
+    var json = JSON.stringify({ v: 1, tareas: estado });
+    var b64 = btoa(unescape(encodeURIComponent(json))).replace(/\+/g, "-").replace(/\//g, "_");
+    return location.origin + location.pathname + location.search + "#plan=" + b64;
+  }
+
+  var recibido = fromHash();
+  if (recibido) { estado = recibido; saveLocal(); }
+  else { var guardado = fromLocal(); if (guardado) estado = guardado; }
+
+  function render(){
+    var frag = document.createDocumentFragment();
+    FASES.forEach(function(f){
+      var items = TAREAS.filter(function(t){ return t[1] === f.id; });
+      if (!items.length) return;
+      var box = document.createElement("div");
+      box.className = "phase";
+      var h = document.createElement("h3");
+      h.textContent = f.t;
+      box.appendChild(h);
+      items.forEach(function(t){
+        var id = t[0], st = estado[id] || "pend";
+        var row = document.createElement("div");
+        row.className = "task";
+
+        var main = document.createElement("div");
+        main.className = "tmain";
+        var tt = document.createElement("p");
+        tt.className = "tt" + (st === "hecho" ? " done" : "");
+        tt.textContent = t[2];
+        var meta = document.createElement("div");
+        meta.className = "tmeta";
+        var s1 = document.createElement("span"); s1.textContent = "Hallazgo " + t[3];
+        var s2 = document.createElement("span"); s2.textContent = t[4];
+        meta.appendChild(s1); meta.appendChild(s2);
+        main.appendChild(tt); main.appendChild(meta);
+
+        var states = document.createElement("div");
+        states.className = "states";
+        ESTADOS.forEach(function(pair){
+          var b = document.createElement("button");
+          b.type = "button"; b.className = "st";
+          b.setAttribute("data-s", pair[0]);
+          var isOn = (st === pair[0]) && (pair[0] !== "pend");
+          b.setAttribute("aria-pressed", isOn ? "true" : "false");
+          b.textContent = pair[1];
+          b.addEventListener("click", function(){
+            setState(id, pair[0] === "pend" ? null : pair[0]);
+          });
+          states.appendChild(b);
+        });
+
+        row.appendChild(main); row.appendChild(states);
+        box.appendChild(row);
+      });
+      frag.appendChild(box);
+    });
+    planroot.textContent = "";
+    planroot.appendChild(frag);
+    updateProgress();
+  }
+
+  function updateProgress(){
+    var done = TAREAS.filter(function(t){ return estado[t[0]] === "hecho"; }).length;
+    var curso = TAREAS.filter(function(t){ return estado[t[0]] === "curso"; }).length;
+    document.getElementById("pfill").style.width = Math.round(done / TAREAS.length * 100) + "%";
+    var txt = done + " de " + TAREAS.length + " completadas";
+    if (curso) txt += " · " + curso + " en curso";
+    document.getElementById("plegend").textContent = txt;
+  }
+
+  function setSave(cls, text){
+    var d = document.getElementById("savedot");
+    d.className = "dot" + (cls ? " " + cls : "");
+    document.getElementById("savetext").textContent = text;
+  }
+
+  function setState(id, s){
+    if (s === null || estado[id] === s) { delete estado[id]; }
+    else { estado[id] = s; }
+    render();
+    var ok = saveLocal();
+    setSave(ok ? "live" : "", ok ? "Guardado en este navegador" : "No se pudo guardar en este navegador");
+    if (history.replaceState) {
+      try { history.replaceState(null, "", location.pathname + location.search); } catch (e) {}
+    }
+  }
+
+  /* --- compartir por enlace --- */
+  var shareBtn = document.getElementById("sharebtn");
+  function flash(msg){
+    shareBtn.textContent = msg;
+    setTimeout(function(){ shareBtn.textContent = "Copiar enlace con este avance"; }, 2600);
+  }
+  function copyFallback(url){
+    var ta = document.createElement("textarea");
+    ta.value = url; ta.setAttribute("readonly", "");
+    ta.style.position = "fixed"; ta.style.left = "-9999px";
+    document.body.appendChild(ta); ta.select();
+    var ok = false;
+    try { ok = document.execCommand("copy"); } catch (e) { ok = false; }
+    document.body.removeChild(ta);
+    flash(ok ? "Enlace copiado" : "No se pudo copiar");
+  }
+  shareBtn.addEventListener("click", function(){
+    var url = shareUrl();
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(url).then(function(){ flash("Enlace copiado"); },
+                                             function(){ copyFallback(url); });
+    } else { copyFallback(url); }
+  });
+
+  document.getElementById("resetbtn").addEventListener("click", function(){
+    estado = {}; render(); saveLocal();
+    setSave("", "Avance reiniciado");
+  });
+
+  render();
+  setSave(Object.keys(estado).length ? "live" : "",
+          recibido ? "Avance recibido por enlace · guardado aquí"
+                   : (Object.keys(estado).length ? "Guardado en este navegador"
+                                                 : "El avance se guarda en este navegador"));
+})();
+</script>
+
+</body>
+</html>
